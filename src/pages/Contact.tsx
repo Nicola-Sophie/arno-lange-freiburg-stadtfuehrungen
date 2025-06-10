@@ -29,7 +29,7 @@ const Contact = () => {
     "Modernes Freiburg",
     "Architektur in Freiburg",
     "Jüdisches Freiburg",
-    "Der Alte Friedhof",
+    "Alter Friedhof",
     "Freiburg-Herdern",
     "Individuelle Tour"
   ];
@@ -37,7 +37,6 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create mailto link with form data
     const subject = `Anfrage für Stadtführung: ${formData.tour || 'Allgemein'}`;
     const body = `
 Hallo Herr Lange,
@@ -84,9 +83,33 @@ ${formData.name}
             <h1 className="text-4xl font-bold text-foreground mb-4">
               Kontakt
             </h1>
-            <p className="text-xl text-muted-foreground">
-              Ich freue mich auf Ihre Anfrage für eine Stadtführung
+            <p className="text-xl text-muted-foreground mb-6">
+              Sie können gerne das Anfrageformular nutzen – oder einfach direkt anrufen.
             </p>
+            
+            {/* Prominent Contact Information */}
+            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="text-center">
+                  <h3 className="font-semibold text-foreground mb-2">Telefon</h3>
+                  <a 
+                    href="tel:+4916098322617" 
+                    className="text-2xl font-bold text-primary hover:underline"
+                  >
+                    +49 160 98322617
+                  </a>
+                </div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-foreground mb-2">E-Mail</h3>
+                  <a 
+                    href="mailto:arno.lange@icloud.com" 
+                    className="text-xl text-primary hover:underline break-all"
+                  >
+                    arno.lange@icloud.com
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -193,46 +216,8 @@ ${formData.name}
               </CardContent>
             </Card>
 
-            {/* Contact Information */}
+            {/* Additional Information */}
             <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">
-                    Kontaktdaten
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">E-Mail</h4>
-                    <a 
-                      href="mailto:arno.lange@icloud.com" 
-                      className="text-primary hover:underline"
-                    >
-                      arno.lange@icloud.com
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Telefon</h4>
-                    <a 
-                      href="tel:+4916098322617" 
-                      className="text-primary hover:underline"
-                    >
-                      +49 160 98322617
-                    </a>
-                  </div>
-
-                  <div className="pt-4 border-t border-border">
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Termine & Preise nach Vereinbarung</strong>
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-2">
-                      Ich antworte in der Regel innerhalb von 24 Stunden auf Ihre Anfrage.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">
@@ -270,10 +255,10 @@ ${formData.name}
                 <CardContent className="space-y-3 text-sm">
                   <p>• Alle Touren können individuell angepasst werden</p>
                   <p>• Gruppengröße: 1-25 Personen</p>
-                  <p>• Sprache: Deutsch (Englisch auf Anfrage)</p>
+                  <p>• Sprache: Deutsch</p>
                   <p>• Wetterunabhängig mit entsprechender Kleidung</p>
                   <p>• Treffpunkt wird bei Buchung vereinbart</p>
-                  <p>• Stornierung bis 24h vorher kostenfrei</p>
+                  <p>• Termine & Preise nach Vereinbarung</p>
                 </CardContent>
               </Card>
             </div>

@@ -21,17 +21,20 @@ const About = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <div className="lg:col-span-1 flex justify-center">
-              <div className="w-64 h-64 bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-6xl text-muted-foreground">📸</span>
-                <span className="sr-only">Profilbild von Arno Lange</span>
+              <div className="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/b0457f5c-687d-4d62-85fb-d301bf3538a4.png" 
+                  alt="Arno Lange - Zertifizierter Gästeführer in Freiburg"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             
-            <div className="lg:col-span-2 space-y-6">
+            <div className="lg:col-span-2">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-2xl text-primary">
-                    Meine Leidenschaft für Freiburg
+                    Freiburg und ich
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-lg">
@@ -42,58 +45,31 @@ const About = () => {
                     besonderen Ort, den ich gerne mit anderen teile.
                   </p>
                   <p>
+                    Der Weg zum Gästeführer begann für mich mit meiner tiefen Verbundenheit 
+                    zu Freiburg und dem Wunsch, die reiche Geschichte dieser Stadt zu teilen. 
+                    Nach einer umfassenden Ausbildung und Zertifizierung durch den BVGD e.V. 
+                    führe ich nun seit mehreren Jahren Besucher durch meine Heimatstadt.
+                  </p>
+                  <p>
                     Als zertifizierter Gästeführer und Mitglied im BVGD e.V. 
                     (Bundesverband der Gästeführer in Deutschland) bringe ich nicht nur 
                     fundiertes Wissen mit, sondern auch die Begeisterung, die nötig ist, 
                     um Geschichte lebendig werden zu lassen.
                   </p>
+                  <p>
+                    Besonders fasziniert mich die Vielfalt Freiburgs – von den gotischen 
+                    Strukturen des Münsters bis hin zu den modernen nachhaltigen Stadtvierteln 
+                    wie Vauban und Rieselfeld. Jede Gasse, jedes Gebäude hat seine eigene 
+                    Geschichte zu erzählen.
+                  </p>
+                  <p>
+                    Mein Ziel ist es, Ihnen nicht nur Fakten zu vermitteln, sondern 
+                    Geschichten zu erzählen, die Freiburg zum Leben erwecken und Ihnen 
+                    ein authentisches Gefühl für diese wunderbare Stadt geben.
+                  </p>
                 </CardContent>
               </Card>
             </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-xl text-primary">
-                  Mein Werdegang
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p>
-                  Der Weg zum Gästeführer begann für mich mit meiner tiefen Verbundenheit 
-                  zu Freiburg und dem Wunsch, die reiche Geschichte dieser Stadt zu teilen. 
-                  Nach einer umfassenden Ausbildung und Zertifizierung durch den BVGD e.V. 
-                  führe ich nun seit mehreren Jahren Besucher durch meine Heimatstadt.
-                </p>
-                <p>
-                  Besonders fasziniert mich die Vielfalt Freiburgs – von den gotischen 
-                  Strukturen des Münsters bis hin zu den modernen nachhaltigen Stadtvierteln 
-                  wie Vauban und Rieselfeld.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-xl text-primary">
-                  Was mich begeistert
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p>
-                  Freiburg ist mehr als nur eine Stadt – es ist ein lebendiges Geschichtsbuch. 
-                  Jede Gasse, jedes Gebäude hat seine eigene Geschichte zu erzählen. 
-                  Von den berühmten Freiburger Bächle über das imposante Münster bis hin 
-                  zu den versteckten Winkeln der Altstadt.
-                </p>
-                <p>
-                  Mein Ziel ist es, Ihnen nicht nur Fakten zu vermitteln, sondern 
-                  Geschichten zu erzählen, die Freiburg zum Leben erwecken und Ihnen 
-                  ein authentisches Gefühl für diese wunderbare Stadt geben.
-                </p>
-              </CardContent>
-            </Card>
           </div>
 
           <Card className="bg-primary/5 border-primary/20">
@@ -110,9 +86,9 @@ const About = () => {
                 die Facetten dieser einzigartigen Stadt.
               </p>
               <p className="text-muted-foreground">
-                Sprechen Sie mich gerne für individuelle Wünsche und Schwerpunkte an. 
-                Meine Führungen richten sich an Touristen, Schulklassen, Familien, 
-                Gruppen sowie Freiburger mit Interesse an ihrer Stadtgeschichte.
+                Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
+                die die Stadt entdecken wollen, aber auch an Freiburger:innen, die ihre 
+                Stadt nochmal neu kennenlernen möchten.
               </p>
             </CardContent>
           </Card>

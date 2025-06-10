@@ -23,12 +23,12 @@ const Tours = () => {
         "Universitätsviertel",
         "Schwabentor und Martinstor"
       ],
-      rating: 4.8
+      popular: true
     },
     {
       id: "mittelalterliches-freiburg",
       title: "Mittelalterliches Freiburg",
-      duration: "75 Minuten", 
+      duration: "90 Minuten", 
       description: "Tauchen Sie ein in die faszinierende mittelalterliche Geschichte Freiburgs. Von der Stadtgründung bis zur Blütezeit als Handelsstadt.",
       highlights: [
         "Gründungsgeschichte der Stadt",
@@ -37,12 +37,12 @@ const Tours = () => {
         "Leben in der mittelalterlichen Stadt",
         "Architektonische Besonderheiten"
       ],
-      rating: 4.9
+      popular: true
     },
     {
       id: "modernes-freiburg",
       title: "Modernes Freiburg",
-      duration: "100 Minuten",
+      duration: "90 Minuten",
       description: "Entdecken Sie das moderne Freiburg mit seinen innovativen Stadtvierteln und nachhaltigen Konzepten. Ein Blick in die Zukunft der Stadtentwicklung.",
       highlights: [
         "Vauban - das Öko-Stadtviertel",
@@ -51,12 +51,12 @@ const Tours = () => {
         "Universitätscampus",
         "Green City Konzepte"
       ],
-      rating: 4.7
+      popular: false
     },
     {
       id: "architektur-freiburg",
       title: "Architektur in Freiburg",
-      duration: "110 Minuten",
+      duration: "60 Minuten",
       description: "Eine Reise durch die Jahrhunderte der Baukunst - von gotischen Meisterwerken bis zur zeitgenössischen Architektur.",
       highlights: [
         "Gotik: Freiburger Münster",
@@ -65,12 +65,12 @@ const Tours = () => {
         "Moderne Architektur",
         "Zeitgenössische Bauten"
       ],
-      rating: 4.6
+      popular: false
     },
     {
       id: "juedisches-freiburg",
       title: "Jüdisches Freiburg",
-      duration: "85 Minuten",
+      duration: "75 Minuten",
       description: "Die Geschichte der jüdischen Gemeinde in Freiburg von den Anfängen bis heute. Ein wichtiger Teil der Stadtgeschichte.",
       highlights: [
         "Mittelalterliche jüdische Gemeinde",
@@ -79,12 +79,12 @@ const Tours = () => {
         "Verfolgung und Widerstand",
         "Neue jüdische Gemeinde"
       ],
-      rating: 4.8
+      popular: false
     },
     {
       id: "alter-friedhof",
-      title: "Der Alte Friedhof",
-      duration: "60 Minuten",
+      title: "Alter Friedhof",
+      duration: "120 Minuten",
       description: "Ein besonderer Ort der Ruhe und Geschichte. Entdecken Sie bedeutende Grabstätten und die Parkanlage des Alten Friedhofs.",
       highlights: [
         "Geschichte des Friedhofs",
@@ -93,7 +93,7 @@ const Tours = () => {
         "Parkanlage und Natur",
         "Kulturhistorische Bedeutung"
       ],
-      rating: 4.5
+      popular: true
     },
     {
       id: "freiburg-herdern",
@@ -107,7 +107,7 @@ const Tours = () => {
         "Besondere Gebäude und Geschichten",
         "Entwicklung des Stadtteils"
       ],
-      rating: 4.4
+      popular: false
     }
   ];
 
@@ -125,7 +125,7 @@ const Tours = () => {
               Wählen Sie aus verschiedenen Touren durch Freiburg - individuell auf Ihre Interessen abgestimmt
             </p>
             <Badge variant="outline" className="text-sm">
-              Dauer: 60-120 Minuten je nach Tour
+              Alle Führungen finden auf Deutsch statt
             </Badge>
           </div>
 
@@ -133,11 +133,16 @@ const Tours = () => {
             {tours.map((tour) => (
               <Card 
                 key={tour.id} 
-                className={`hover:shadow-lg transition-all cursor-pointer ${
+                className={`hover:shadow-lg transition-all cursor-pointer relative ${
                   selectedTour === tour.id ? 'ring-2 ring-primary' : ''
                 }`}
                 onClick={() => setSelectedTour(selectedTour === tour.id ? null : tour.id)}
               >
+                {tour.popular && (
+                  <Badge className="absolute -top-2 -right-2 bg-primary text-primary-foreground">
+                    Beliebt
+                  </Badge>
+                )}
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -145,10 +150,6 @@ const Tours = () => {
                       <CardDescription className="text-primary font-semibold">
                         Dauer: {tour.duration}
                       </CardDescription>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <span className="text-sm font-semibold">{tour.rating}</span>
-                      <span className="text-yellow-500">★</span>
                     </div>
                   </div>
                 </CardHeader>
@@ -202,17 +203,17 @@ const Tours = () => {
                   <div>
                     <strong>Geeignet für:</strong>
                     <ul className="mt-2 space-y-1">
-                      <li>• Touristen und Besucher</li>
-                      <li>• Schulklassen</li>
+                      <li>• Gäste in Freiburg</li>
                       <li>• Familien mit Kindern</li>
+                      <li>• Gruppen und Vereine</li>
                     </ul>
                   </div>
                   <div>
                     <strong>Auch für:</strong>
                     <ul className="mt-2 space-y-1">
-                      <li>• Gruppen und Vereine</li>
-                      <li>• Freiburger Bürger</li>
+                      <li>• Freiburger:innen</li>
                       <li>• Firmenevents</li>
+                      <li>• Individuelle Wünsche</li>
                     </ul>
                   </div>
                 </div>

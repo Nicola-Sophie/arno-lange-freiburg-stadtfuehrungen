@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -10,17 +11,20 @@ const Index = () => {
     {
       title: "Allgemeine Stadtführung",
       description: "Ein umfassender Rundgang durch Freiburgs Geschichte und Sehenswürdigkeiten",
-      duration: "90 Minuten"
+      duration: "90 Minuten",
+      popular: true
     },
     {
       title: "Mittelalterliches Freiburg",
       description: "Entdecken Sie die faszinierende mittelalterliche Geschichte der Stadt",
-      duration: "75 Minuten"
+      duration: "90 Minuten",
+      popular: true
     },
     {
-      title: "Architektur in Freiburg",
-      description: "Von gotischen Bauten bis zur modernen Architektur",
-      duration: "100 Minuten"
+      title: "Alter Friedhof",
+      description: "Ein besonderer Ort der Ruhe und Geschichte",
+      duration: "120 Minuten",
+      popular: true
     }
   ];
 
@@ -33,10 +37,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Thematische Stadtführungen in Freiburg
+              Thematische Stadtführungen in Freiburg – individuell auf Ihre Interessen abgestimmt
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Individuell auf Ihre Interessen abgestimmt
+              Alle Führungen finden auf Deutsch statt
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6">
@@ -64,19 +68,22 @@ const Index = () => {
                   biete ich Ihnen professionelle und unterhaltsame Stadtführungen durch 
                   das wunderschöne Freiburg im Breisgau.
                 </p>
-                <p className="text-lg text-muted-foreground mb-8">
-                  Entdecken Sie mit mir die faszinierende Geschichte, Kultur und 
-                  Architektur dieser einzigartigen Stadt – ob für Touristen, 
-                  Schulklassen, Familien oder Freiburger mit Interesse an ihrer Stadtgeschichte.
+                <p className="text-lg text-muted-foreground mb-6">
+                  Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
+                  die die Stadt entdecken wollen, aber auch an Freiburger:innen, die ihre 
+                  Stadt nochmal neu kennenlernen möchten.
                 </p>
                 <Button asChild variant="outline">
                   <Link to="/about">Mehr über mich erfahren</Link>
                 </Button>
               </div>
               <div className="flex justify-center">
-                <div className="w-64 h-64 bg-muted rounded-full flex items-center justify-center">
-                  <span className="text-6xl text-muted-foreground">📸</span>
-                  <span className="sr-only">Profilbild von Arno Lange</span>
+                <div className="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="/lovable-uploads/b0457f5c-687d-4d62-85fb-d301bf3538a4.png" 
+                    alt="Arno Lange - Zertifizierter Gästeführer in Freiburg"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -99,7 +106,12 @@ const Index = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {featuredTours.map((tour, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
+                <Card key={index} className="hover:shadow-lg transition-shadow relative">
+                  {tour.popular && (
+                    <Badge className="absolute -top-2 -right-2 bg-primary text-primary-foreground">
+                      Beliebt
+                    </Badge>
+                  )}
                   <CardHeader>
                     <CardTitle className="text-xl">{tour.title}</CardTitle>
                     <CardDescription className="text-sm text-primary font-semibold">
