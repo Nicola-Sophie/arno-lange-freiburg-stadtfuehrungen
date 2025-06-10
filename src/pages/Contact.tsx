@@ -1,0 +1,289 @@
+
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useToast } from "@/hooks/use-toast";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    tour: "",
+    groupSize: "",
+    preferredDate: "",
+    message: ""
+  });
+  
+  const { toast } = useToast();
+
+  const tours = [
+    "Allgemeine Stadtführung",
+    "Mittelalterliches Freiburg", 
+    "Modernes Freiburg",
+    "Architektur in Freiburg",
+    "Jüdisches Freiburg",
+    "Der Alte Friedhof",
+    "Freiburg-Herdern",
+    "Individuelle Tour"
+  ];
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Create mailto link with form data
+    const subject = `Anfrage für Stadtführung: ${formData.tour || 'Allgemein'}`;
+    const body = `
+Hallo Herr Lange,
+
+ich interessiere mich für eine Stadtführung in Freiburg.
+
+Kontaktdaten:
+Name: ${formData.name}
+E-Mail: ${formData.email}
+Telefon: ${formData.phone}
+
+Details zur gewünschten Tour:
+Tour: ${formData.tour || 'Bitte kontaktieren Sie mich für Beratung'}
+Gruppengröße: ${formData.groupSize || 'Nicht angegeben'}
+Wunschtermin: ${formData.preferredDate || 'Flexibel'}
+
+Nachricht:
+${formData.message}
+
+Mit freundlichen Grüßen
+${formData.name}
+    `.trim();
+
+    const mailtoLink = `mailto:arno.lange@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+
+    toast({
+      title: "E-Mail wird geöffnet",
+      description: "Ihr E-Mail-Programm sollte sich öffnen. Falls nicht, kopieren Sie bitte die E-Mail-Adresse.",
+    });
+  };
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      
+      <main className="container mx-auto px-4 py-12">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-foreground mb-4">
+              Kontakt
+            </h1>
+            <p className="text-xl text-muted-foreground">
+              Ich freue mich auf Ihre Anfrage für eine Stadtführung
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Contact Form */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl text-primary">
+                  Anfrage senden
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="name">Name *</Label>
+                      <Input
+                        id="name"
+                        value={formData.name}
+                        onChange={(e) => handleInputChange("name", e.target.value)}
+                        required
+                        placeholder="Ihr Name"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="email">E-Mail *</Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={(e) => handleInputChange("email", e.target.value)}
+                        required
+                        placeholder="ihre.email@example.com"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Telefon</Label>
+                    <Input
+                      id="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange("phone", e.target.value)}
+                      placeholder="+49 ..."
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="tour">Gewünschte Tour</Label>
+                      <Select onValueChange={(value) => handleInputChange("tour", value)}>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Tour auswählen" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {tours.map((tour) => (
+                            <SelectItem key={tour} value={tour}>
+                              {tour}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="groupSize">Gruppengröße</Label>
+                      <Input
+                        id="groupSize"
+                        value={formData.groupSize}
+                        onChange={(e) => handleInputChange("groupSize", e.target.value)}
+                        placeholder="z.B. 8 Personen"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="preferredDate">Wunschtermin</Label>
+                    <Input
+                      id="preferredDate"
+                      value={formData.preferredDate}
+                      onChange={(e) => handleInputChange("preferredDate", e.target.value)}
+                      placeholder="z.B. 15. Dezember, nachmittags"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Nachricht</Label>
+                    <Textarea
+                      id="message"
+                      value={formData.message}
+                      onChange={(e) => handleInputChange("message", e.target.value)}
+                      placeholder="Besondere Wünsche, Fragen oder Anmerkungen..."
+                      rows={4}
+                    />
+                  </div>
+
+                  <Button type="submit" className="w-full" size="lg">
+                    Anfrage senden
+                  </Button>
+
+                  <p className="text-sm text-muted-foreground text-center">
+                    * Pflichtfelder
+                  </p>
+                </form>
+              </CardContent>
+            </Card>
+
+            {/* Contact Information */}
+            <div className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">
+                    Kontaktdaten
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">E-Mail</h4>
+                    <a 
+                      href="mailto:arno.lange@icloud.com" 
+                      className="text-primary hover:underline"
+                    >
+                      arno.lange@icloud.com
+                    </a>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Telefon</h4>
+                    <a 
+                      href="tel:+4916098322617" 
+                      className="text-primary hover:underline"
+                    >
+                      +49 160 98322617
+                    </a>
+                  </div>
+
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-sm text-muted-foreground">
+                      <strong>Termine & Preise nach Vereinbarung</strong>
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-2">
+                      Ich antworte in der Regel innerhalb von 24 Stunden auf Ihre Anfrage.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">
+                    Qualifikation
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-primary rounded-full"></div>
+                      <span className="text-foreground">Zertifizierter Gästeführer</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-primary rounded-full"></div>
+                      <span className="text-foreground">Mitglied im BVGD e.V.</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-primary rounded-full"></div>
+                      <span className="text-foreground">Erfahrung seit mehreren Jahren</span>
+                    </div>
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground mt-4">
+                    BVGD e.V. = Bundesverband der Gästeführer in Deutschland
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-accent/50">
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">
+                    Hinweise zur Buchung
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3 text-sm">
+                  <p>• Alle Touren können individuell angepasst werden</p>
+                  <p>• Gruppengröße: 1-25 Personen</p>
+                  <p>• Sprache: Deutsch (Englisch auf Anfrage)</p>
+                  <p>• Wetterunabhängig mit entsprechender Kleidung</p>
+                  <p>• Treffpunkt wird bei Buchung vereinbart</p>
+                  <p>• Stornierung bis 24h vorher kostenfrei</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Contact;
