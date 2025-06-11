@@ -8,7 +8,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -94,7 +93,7 @@ ${formData.name}
                   <h3 className="font-semibold text-foreground mb-2">Telefon</h3>
                   <a 
                     href="tel:+4916098322617" 
-                    className="text-2xl font-bold text-primary hover:underline"
+                    className="text-2xl font-bold text-foreground hover:text-primary hover:underline"
                   >
                     +49 160 98322617
                   </a>
@@ -103,7 +102,7 @@ ${formData.name}
                   <h3 className="font-semibold text-foreground mb-2">E-Mail</h3>
                   <a 
                     href="mailto:arno.lange@icloud.com" 
-                    className="text-xl text-primary hover:underline break-all"
+                    className="text-xl text-foreground hover:text-primary hover:underline break-all"
                   >
                     arno.lange@icloud.com
                   </a>
@@ -147,12 +146,13 @@ ${formData.name}
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Telefon</Label>
+                    <Label htmlFor="phone">Telefon *</Label>
                     <Input
                       id="phone"
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => handleInputChange("phone", e.target.value)}
+                      required
                       placeholder="+49 ..."
                     />
                   </div>
@@ -265,8 +265,6 @@ ${formData.name}
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };
