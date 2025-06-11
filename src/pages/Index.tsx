@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   const featuredTours = [
@@ -32,10 +31,10 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/20 py-12">
+      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/20 py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
               Thematische Stadtführungen in Freiburg – individuell auf Ihre Interessen abgestimmt
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
@@ -144,17 +143,15 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="secondary" size="lg" className="font-semibold">
-                <Link to="/contact">Jetzt anfragen</Link>
+                <Link to="/contact">Jetzt Buchen</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold">
+              <Button asChild variant="secondary" size="lg" className="font-semibold">
                 <Link to="/tours">Touren ansehen</Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
