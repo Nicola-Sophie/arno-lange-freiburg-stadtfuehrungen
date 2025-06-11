@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -33,21 +32,21 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/20 py-20">
+      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/20 py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Thematische Stadtführungen in Freiburg – individuell auf Ihre Interessen abgestimmt
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Alle Führungen finden auf Deutsch statt
+            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              Entdecken Sie mit mir die verborgenen Schätze und faszinierenden Geschichten meiner Heimatstadt
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6">
                 <Link to="/tours">Touren entdecken</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
-                <Link to="/contact">Kontakt aufnehmen</Link>
+                <Link to="/contact">Persönliche Beratung</Link>
               </Button>
             </div>
           </div>
@@ -61,20 +60,24 @@ const Index = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-6">
-                  Ihr zertifizierter Gästeführer
+                  Ihr persönlicher Gästeführer
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Als Mitglied im BVGD e.V. (Bundesverband der Gästeführer in Deutschland) 
-                  biete ich Ihnen professionelle und unterhaltsame Stadtführungen durch 
-                  das wunderschöne Freiburg im Breisgau.
+                  Als zertifizierter Gästeführer und Mitglied im BVGD e.V. 
+                  (Bundesverband der Gästeführer in Deutschland) teile ich mit Ihnen 
+                  meine Begeisterung für das wunderschöne Freiburg im Breisgau.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
                   Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
                   die die Stadt entdecken wollen, aber auch an Freiburger:innen, die ihre 
                   Stadt nochmal neu kennenlernen möchten.
                 </p>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Jede Tour gestalte ich individuell nach Ihren Interessen – denn jeder 
+                  Gast bringt andere Fragen und Neugier mit.
+                </p>
                 <Button asChild variant="outline">
-                  <Link to="/about">Mehr über mich erfahren</Link>
+                  <Link to="/about">Mehr über meine Geschichte</Link>
                 </Button>
               </div>
               <div className="flex justify-center">
@@ -97,7 +100,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Beliebte Stadtführungen
+                Meine beliebtesten Stadtführungen
               </h2>
               <p className="text-lg text-muted-foreground">
                 Wählen Sie aus verschiedenen thematischen Touren durch Freiburg
@@ -106,12 +109,7 @@ const Index = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {featuredTours.map((tour, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow relative">
-                  {tour.popular && (
-                    <Badge className="absolute -top-2 -right-2 bg-primary text-primary-foreground">
-                      Beliebt
-                    </Badge>
-                  )}
+                <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
                     <CardTitle className="text-xl">{tour.title}</CardTitle>
                     <CardDescription className="text-sm text-primary font-semibold">
@@ -135,20 +133,20 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="py-12 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Bereit für Ihre persönliche Stadtführung?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-lg md:text-xl mb-8 opacity-90">
               Kontaktieren Sie mich für individuelle Termine und Preise
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild variant="secondary" size="lg">
+              <Button asChild variant="secondary" size="lg" className="font-semibold">
                 <Link to="/contact">Jetzt anfragen</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button asChild variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold">
                 <Link to="/tours">Touren ansehen</Link>
               </Button>
             </div>
