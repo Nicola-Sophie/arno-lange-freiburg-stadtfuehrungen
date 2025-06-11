@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -45,7 +44,7 @@ const Index = () => {
                 <Link to="/tours">Touren entdecken</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
-                <Link to="/contact">Persönliche Beratung</Link>
+                <Link to="/contact">Jetzt Buchen</Link>
               </Button>
             </div>
           </div>

@@ -1,7 +1,5 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const About = () => {
   return (
@@ -94,8 +92,6 @@ const About = () => {
           </Card>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };
