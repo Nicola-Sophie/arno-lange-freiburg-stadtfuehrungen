@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 const Index = () => {
   const featuredTours = [
     {
-      title: "Allgemeine Stadtführung",
+      title: "Der klassische Stadtrundgang",
       description: "Ein umfassender Rundgang durch Freiburgs Geschichte und Sehenswürdigkeiten",
       duration: "90 Minuten",
       popular: true
