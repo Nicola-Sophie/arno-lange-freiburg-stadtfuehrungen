@@ -38,15 +38,13 @@ const About = () => {
                 <CardContent className="space-y-4 text-lg">
                   <p>
                     Freiburg im Breisgau ist eine Stadt, die mich seit jeher fasziniert. 
-                    Die einzigartige Mischung aus mittelalterlicher Geschichte, lebendiger 
+                    Die einzigartige Mischung aus Geschichte, lebendiger 
                     Universitätskultur und moderner Architektur macht diese Stadt zu einem 
                     besonderen Ort, den ich gerne mit anderen teile.
                   </p>
                   <p>
-                    Der Weg zum Gästeführer begann für mich mit meiner tiefen Verbundenheit 
-                    zu Freiburg und dem Wunsch, die reiche Geschichte dieser Stadt zu teilen. 
-                    Nach einer umfassenden Ausbildung und Zertifizierung durch den BVGD e.V. 
-                    führe ich nun seit mehreren Jahren Besucher durch meine Heimatstadt.
+                    Der Weg zum Gästeführer begann für mich nach der Rente, da meine Töchter meinten nur
+                    auf der Choach liegen sein nichts für mich.
                   </p>
                   <p>
                     Besonders fasziniert mich das Erfolgsgeheimnis des Freiburger Stadtbildes, was da heißt: 
