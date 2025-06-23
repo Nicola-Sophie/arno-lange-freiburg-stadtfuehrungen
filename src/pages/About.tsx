@@ -49,12 +49,6 @@ const About = () => {
                     führe ich nun seit mehreren Jahren Besucher durch meine Heimatstadt.
                   </p>
                   <p>
-                    Als zertifizierter Gästeführer und Mitglied im BVGD e.V. 
-                    (Bundesverband der Gästeführer in Deutschland) bringe ich nicht nur 
-                    fundiertes Wissen mit, sondern auch die Begeisterung, die nötig ist, 
-                    um Geschichte lebendig werden zu lassen.
-                  </p>
-                  <p>
                     Besonders fasziniert mich das Erfolgsgeheimnis des Freiburger Stadtbildes, was da heißt: 
                     "Vielfalt in der Einheit". Jede Gasse, jedes Gebäude hat seine eigene 
                     Geschichte zu erzählen.
