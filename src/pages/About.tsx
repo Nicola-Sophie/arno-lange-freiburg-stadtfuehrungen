@@ -38,20 +38,25 @@ const About = () => {
                 <CardContent className="space-y-4 text-lg">
                   <p>
                     Freiburg im Breisgau ist eine Stadt, die mich seit jeher fasziniert. 
-                    Die einzigartige Mischung aus Geschichte, lebendiger 
+                    Die einzigartige Mischung aus mittelalterlicher Geschichte, lebendiger 
                     Universitätskultur und moderner Architektur macht diese Stadt zu einem 
                     besonderen Ort, den ich gerne mit anderen teile.
                   </p>
                   <p>
-                    Der Weg zum Gästeführer begann für mich mit der Rente. Meine Töchter meinten, dass nur auf der Chouch
-                    zu liegen nichts für mich sei. 
+                    Der Weg zum Gästeführer begann für mich mit meiner tiefen Verbundenheit 
+                    zu Freiburg und dem Wunsch, die reiche Geschichte dieser Stadt zu teilen. 
                     Nach einer umfassenden Ausbildung und Zertifizierung durch den BVGD e.V. 
-                    führe ich nun seit mehreren Jahren Besucher durch meine Wahlheimatstadt.
+                    führe ich nun seit mehreren Jahren Besucher durch meine Heimatstadt.
                   </p>
                   <p>
-                    Besonders fasziniert mich die Vielfalt Freiburgs – von den gotischen 
-                    Strukturen des Münsters bis hin zu den modernen nachhaltigen Stadtvierteln 
-                    wie Vauban und Rieselfeld. Jede Gasse, jedes Gebäude hat seine eigene 
+                    Als zertifizierter Gästeführer und Mitglied im BVGD e.V. 
+                    (Bundesverband der Gästeführer in Deutschland) bringe ich nicht nur 
+                    fundiertes Wissen mit, sondern auch die Begeisterung, die nötig ist, 
+                    um Geschichte lebendig werden zu lassen.
+                  </p>
+                  <p>
+                    Besonders fasziniert mich das Erfolgsgeheimnis des Freiburger Stadtbildes, was da heißt: 
+                    "Vielfalt in der Einheit". Jede Gasse, jedes Gebäude hat seine eigene 
                     Geschichte zu erzählen.
                   </p>
                   <p>
@@ -72,10 +77,9 @@ const About = () => {
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <p className="text-lg">
-                Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an. 
-                Ob Sie sich für mittelalterliche Geschichte, moderne Architektur oder 
-                das jüdische Leben in Freiburg interessieren – gemeinsam entdecken wir 
-                die Facetten dieser einzigartigen Stadt.
+                Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an.
+                Sind sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche
+                ich individuell einzugehen.
               </p>
               <p className="text-muted-foreground">
                 Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
