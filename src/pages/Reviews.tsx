@@ -59,8 +59,7 @@ const Reviews = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Erfahrungen meiner Gäste mit den Stadtführungen
             </p>
-            
-
+          </div>
 
           {/* Reviews Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
