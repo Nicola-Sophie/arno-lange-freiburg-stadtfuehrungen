@@ -42,7 +42,7 @@ const Tours = () => {
       id: "modernes-freiburg",
       title: "Das moderne Freiburg",
       duration: "90 Minuten",
-      description: "Von der Nachkriegszeit bis heute - entdecken Sie das moderne Freiburg mit seinen innovativen Stadtvierteln und nachhaltigen Konzepten.",
+      description: "Das moderne Freiburg vom Wiederaufbau bis heute\n\nVom Bahnhof zur Altstadt\nDie 1,5-stündige Führung zur Stadtentwicklung seit der Nachkriegszeit führt Sie vom Platz der alten Synagoge durch die UB zur Bismarckallee, dem verdichteten Entlastungsraum des Bahnhofs­gegend. Sie sehen die tanzenden Regel und das Windfenster. Durch die Eisenbahnstraße gehen wir zum aktuell neu gestalteten Rotteckring und bestaunen an der Nordwest­ecke der Altstadt moderne Architektur, die sich homogen in den Stadtkörper einfügt, und gehen dann weiter zum Siegesdenkmal, wo der international renommierte Architekt Jürgen Mayer den Pavillon u. die Haltestelle futuristisch gestaltet hat. So verstehen Sie dann das Erfolgsgeheimnis des Freiburger Stadtbildes: Vielfalt in der Einheit!",
       highlights: [
         "Wiederaufbau nach dem Zweiten Weltkrieg",
         "Vauban - das Öko-Stadtviertel",
