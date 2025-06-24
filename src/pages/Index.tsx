@@ -37,7 +37,7 @@ const Index = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
   Thematische Stadtführungen in Freiburg
 </h1>
-<h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+<h2 className="text-xl md:text-3xl text-foreground mb-6">
   Individuell auf Ihre Interessen abgestimmt
 </h2>
 
