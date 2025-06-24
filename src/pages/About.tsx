@@ -70,7 +70,7 @@ const About = () => {
             <CardContent className="text-center space-y-4">
               <p className="text-lg">
                 Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an.
-                Sind sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche
+                Sind Sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche
                 ich individuell einzugehen.
               </p>
               <p className="text-muted-foreground">
