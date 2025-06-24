@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,21 +7,18 @@ const Index = () => {
   const featuredTours = [
     {
       title: "Der klassische Stadtrundgang",
-      description: "Ein umfassender Rundgang durch Freiburgs Geschichte und Sehenswürdigkeiten",
-      duration: "90 Minuten",
-      popular: true
+      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso...",
+      duration: "90 Minuten"
     },
     {
-      title: "Architektur in Freiburg",
-      description: "Eine Reise durch die Jahrhunderte der Baukunst - von gotischen Meisterwerken bis zur zeitgenössischen Architektur",
-      duration: "90 Minuten",
-      popular: true
+      title: "Der alte Friedhof",
+      description: "Der denkmalgeschützte alte Friedhof ist seit seiner Stilllegung 1873 ein Platz der Entspannung. Wer hat Kaiser Napoleon in den Fuß geschossen, wer zeigte dem Großherzog die lange Nase und wer legt dem schlafenden Mädchen...",
+      duration: "90 Minuten"
     },
     {
-      title: "Alter Friedhof",
-      description: "Ein besonderer Ort der Ruhe und Geschichte",
-      duration: "90 Minuten",
-      popular: true
+      title: "Das moderne Freiburg",
+      description: "Das moderne Freiburg vom Wiederaufbau bis heute Vom Bahnhof zur Altstadt Die 1,5-stündige Führung zur Stadtentwicklung seit der Nachkriegszeit führt Sie vom Platz der alten Synagoge durch die UB zur...",
+      duration: "90 Minuten"
     }
   ];
 
