@@ -54,24 +54,13 @@ const Reviews = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-foreground mb-4">
-              Rezensionen & Bewertungen
+              Rezensionen
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Erfahrungen meiner Gäste mit den Stadtführungen
             </p>
             
-            <div className="flex justify-center items-center space-x-6 mb-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">5.0</div>
-                <div className="flex justify-center mb-1">
-                  {renderStars(5)}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  Durchschnitt aus {reviews.length} Bewertungen
-                </div>
-              </div>
-            </div>
-          </div>
+
 
           {/* Reviews Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
