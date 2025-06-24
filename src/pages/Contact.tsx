@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -23,7 +22,7 @@ const Contact = () => {
   const { toast } = useToast();
 
   const tours = [
-    "Allgemeine Stadtführung" 
+    "Allgemeine Stadtführung",
     "Modernes Freiburg",
     "Architektur in Freiburg",
     "Jüdisches Freiburg",
@@ -101,7 +100,7 @@ ${formData.name}
                   <h3 className="font-semibold text-foreground mb-2">E-Mail</h3>
                   <a 
                     href="mailto:arno.lange@icloud.com" 
-                    className="text-xl text-foreground hover:text-primary hover:underline break-all"
+                    className="text-2xl font-bold text-foreground hover:text-primary hover:underline break-all"
                   >
                     arno.lange@icloud.com
                   </a>
@@ -158,8 +157,8 @@ ${formData.name}
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="tour">Gewünschte Tour</Label>
-                      <Select onValueChange={(value) => handleInputChange("tour", value)}>
+                      <Label htmlFor="tour">Gewünschte Tour *</Label>
+                      <Select onValueChange={(value) => handleInputChange("tour", value)} required>
                         <SelectTrigger>
                           <SelectValue placeholder="Tour auswählen" />
                         </SelectTrigger>
@@ -173,11 +172,12 @@ ${formData.name}
                       </Select>
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="groupSize">Gruppengröße</Label>
+                      <Label htmlFor="groupSize">Gruppengröße *</Label>
                       <Input
                         id="groupSize"
                         value={formData.groupSize}
                         onChange={(e) => handleInputChange("groupSize", e.target.value)}
+                        required
                         placeholder="z.B. 8 Personen"
                       />
                     </div>
@@ -217,41 +217,13 @@ ${formData.name}
 
             {/* Additional Information */}
             <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">
-                    Qualifikation
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Zertifizierter Gästeführer</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Mitglied im BVGD e.V.</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Erfahrung seit mehreren Jahren</span>
-                    </div>
-                  </div>
-                  
-                  <p className="text-sm text-muted-foreground mt-4">
-                    BVGD e.V. = Bundesverband der Gästeführer in Deutschland
-                  </p>
-                </CardContent>
-              </Card>
-
               <Card className="bg-accent/50">
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">
                     Hinweise zur Buchung
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3 text-sm">
+                <CardContent className="space-y-3 text-base">
                   <p>• Alle Touren können individuell angepasst werden</p>
                   <p>• Gruppengröße: 1-25 Personen</p>
                   <p>• Sprache: Deutsch</p>
