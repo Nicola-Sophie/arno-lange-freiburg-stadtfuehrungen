@@ -69,25 +69,6 @@ const About = () => {
             </div>
           </div>
 
-          <Card className="bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary text-center">
-                Ihre Stadtführung, individuell gestaltet
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center space-y-4">
-              <p className="text-lg">
-                Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an.
-                Sind Sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche
-                ich individuell einzugehen.
-              </p>
-              <p className="text-muted-foreground">
-                Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
-                die die Stadt entdecken wollen, aber auch an Freiburger:innen, die ihre 
-                Stadt nochmal neu kennenlernen möchten.
-              </p>
-            </CardContent>
-          </Card>
 
           {/* CTA Section */}
           <section className="py-12 bg-primary text-primary-foreground rounded-lg">
