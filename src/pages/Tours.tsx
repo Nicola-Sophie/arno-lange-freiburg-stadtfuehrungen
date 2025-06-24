@@ -28,7 +28,7 @@ const Tours = () => {
       id: "alter-friedhof",
       title: "Der alte Friedhof",
       duration: "90 Minuten",
-      description: "Ein besonderer Ort der Ruhe und Geschichte. Entdecken Sie bedeutende Grabstätten und die Parkanlage des Alten Friedhofs.",
+      description: "Der denkmalgeschützte alte Friedhof ist seit seiner Stilllegung 1873 ein Platz der Entspannung. Wer hat Kaiser Napoleon in den Fuß geschossen, wer zeigte dem Großherzog die lange Nase und wer legt dem schlafenden Mädchen jahrzehntelang frisch Blumen aufs Grab. Warum läuft ein Totenkopf unter dem Kreuz Jesu und weshalb fliegen so viele seltene Schmetterlinge herum. Dies alles und vieles mehr erfahren Sie auf einem Spaziergang von ca. 1,5 Std.",
       highlights: [
         "Geschichte des Friedhofs",
         "Bedeutende Persönlichkeiten",
