@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,8 +13,8 @@ const Index = () => {
       popular: true
     },
     {
-      title: "Mittelalterliches Freiburg",
-      description: "Entdecken Sie die faszinierende mittelalterliche Geschichte der Stadt",
+      title: "Architektur in Freiburg",
+      description: "Eine Reise durch die Jahrhunderte der Baukunst - von gotischen Meisterwerken bis zur zeitgenössischen Architektur",
       duration: "90 Minuten",
       popular: true
     },
