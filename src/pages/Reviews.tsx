@@ -28,7 +28,7 @@ const Reviews = () => {
       id: 4,
       name: "Paul G.",
       date: "April 2025",
-      comment: "Unser Führer Herr Lange hat die Tour sehr informativ und kurzweilig geführt, hat uns super gefallen 😋"
+      comment: "Unser Führer Herr Lange hat die Tour sehr informativ und kurzweilig geführt, hat uns super gefallen"
     },
     {
       id: 5,
