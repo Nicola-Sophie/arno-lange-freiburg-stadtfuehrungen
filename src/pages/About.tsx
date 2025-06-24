@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 
@@ -50,6 +51,16 @@ const About = () => {
                     Besonders fasziniert mich das Erfolgsgeheimnis des Freiburger Stadtbildes, was da heißt: 
                     "Vielfalt in der Einheit". Jede Gasse, jedes Gebäude hat seine eigene 
                     Geschichte zu erzählen.
+                  </p>
+                  <p>
+                    Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an. 
+                    Sind Sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche 
+                    ich individuell einzugehen.
+                  </p>
+                  <p>
+                    Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
+                    die die Stadt entdecken wollen, aber auch an Freiburger:innen, die ihre 
+                    Stadt nochmal neu kennenlernen möchten.
                   </p>
                   <p>
                     Mein Ziel ist es, Ihnen nicht nur Fakten zu vermitteln, sondern 
