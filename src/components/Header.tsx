@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -21,7 +20,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-primary rounded-full overflow-hidden flex items-center justify-center border-2 border-primary">
+            <div className="w-12 h-12 bg-primary rounded-full overflow-hidden flex items-center justify-center">
               <img 
                 src="/lovable-uploads/b0457f5c-687d-4d62-85fb-d301bf3538a4.png" 
                 alt="Arno Lange"
