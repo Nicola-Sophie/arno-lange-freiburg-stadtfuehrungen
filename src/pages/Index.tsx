@@ -62,11 +62,8 @@ const Index = () => {
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
                   Als zertifizierter Gästeführer und Mitglied im BVGD e.V. 
-                  (Bundesverband der Gästeführer in Deutschland) teile ich mit Ihnen 
-                  meine Begeisterung für das wunderschöne Freiburg im Breisgau.
-                </p>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
+                  (Bundesverband der Gästeführer in Deutschland) richten sich meine
+                  Führungen an Gäste in Freiburg, Familien und Gruppen, 
                   die die Stadt entdecken wollen, aber auch an Freiburger:innen, die ihre 
                   Stadt nochmal neu kennenlernen möchten.
                 </p>
