@@ -69,7 +69,7 @@ const Tours = () => {
     },
     {
       id: "stadtteil-herdern",
-      title: "Der Stadtteil Herdern",
+      title: "Mein Stadtteil Herdern",
       duration: "90 Minuten",
       description: "Entdecken Sie den historischen Stadtteil Herdern mit seinen Villen, dem Stadtgarten und besonderen Geschichten.",
       highlights: [
