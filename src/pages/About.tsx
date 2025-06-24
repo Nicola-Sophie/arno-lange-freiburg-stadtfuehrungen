@@ -58,14 +58,14 @@ const About = () => {
                     ich individuell einzugehen.
                   </p>
                   <p>
-                    Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
-                    die die Stadt entdecken wollen, aber auch an Freiburger:innen, die ihre 
-                    Stadt nochmal neu kennenlernen möchten.
-                  </p>
-                  <p>
                     Mein Ziel ist es, Ihnen nicht nur Fakten zu vermitteln, sondern 
                     Geschichten zu erzählen, die Freiburg zum Leben erwecken und Ihnen 
                     ein authentisches Gefühl für diese wunderbare Stadt geben.
+                  </p>
+                  <p> 
+                  Meine Führungen richten sich an Gäste in Freiburg, Familien und Gruppen, 
+                    die die Stadt entdecken wollen, aber auch an Freiburger:innen, die ihre 
+                    Stadt nochmal neu kennenlernen möchten.
                   </p>
                 </CardContent>
               </Card>
