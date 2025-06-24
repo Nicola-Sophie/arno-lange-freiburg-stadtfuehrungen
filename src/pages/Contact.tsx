@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -168,7 +169,11 @@ ${formData.name}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="tour">Gewünschte Tour *</Label>
-                      <Select onValueChange={(value) => handleInputChange("tour", value)} required>
+                      <Select 
+                        value={formData.tour} 
+                        onValueChange={(value) => handleInputChange("tour", value)} 
+                        required
+                      >
                         <SelectTrigger>
                           <SelectValue placeholder="Tour auswählen" />
                         </SelectTrigger>
