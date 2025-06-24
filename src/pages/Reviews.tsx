@@ -7,6 +7,24 @@ import Header from "@/components/Header";
 const Reviews = () => {
   const reviews = [
     {
+      id: 3,
+      name: "Annemarie M.",
+      date: "April 2025",
+      comment: "Es war super. Sehr informativ. Arno hat das Ganze total toll verpackt und ist auch super darauf eingegangen, dass Kinder in der Gruppe waren. Er hat sie mit einbezogen und alles total anschaulich erzählt. Kann ich sehr empfehlen."
+    },
+    {
+      id: 4,
+      name: "Paul G.",
+      date: "April 2025",
+      comment: "Unser Führer Herr Lange hat die Tour sehr informativ und kurzweilig geführt, hat uns super gefallen 😋"
+    },
+    {
+      id: 5,
+      name: "Alina K.",
+      date: "April 2025",
+      comment: "Der Stadtführer A. Lange brachte uns kenntnisreich, locker und sehr gut fundiert die besonderen städtebaulichen und geschichtlichen Be-u.Gegebenheiten Freiburgs zur Kenntnis. Wir können unumwunden sagen: \"Super\""
+    },
+    {
       id: 1,
       name: "Stefanie A.",
       date: "November 2024",
@@ -17,24 +35,6 @@ const Reviews = () => {
       name: "Carlo B.",
       date: "Oktober 2024",
       comment: "Herr Lange hat uns freundlich und offen empfangen. Die Führung war kurzweilig, informativ und humorvoll gestaltet. Sein gutes Auge für Details hat uns vielfältige Einblicke gewährt, die man alleine niemals entdeckt hätte. Vielen Dank!"
-    },
-    {
-      id: 3,
-      name: "Annemarie M.",
-      date: "April 2025",
-      comment: "Es war super. Sehr informativ. Arno hat das Ganze total toll verpackt und ist auch super darauf eingegangen, dass Kinder in der Gruppe waren. Er hat sie mit einbezogen und alles total anschaulich erzählt. Kann ich sehr empfehlen."
-    },
-    {
-      id: 4,
-      name: "Paul G.",
-      date: "April 2025",
-      comment: "Unser Führer Herr Lange hat die Tour sehr informativ und kurzweilig geführt, hat uns super gefallen"
-    },
-    {
-      id: 5,
-      name: "Alina K.",
-      date: "Mai 2025",
-      comment: "Der Stadtführer A. Lange brachte uns kenntnisreich, locker und sehr gut fundiert die besonderen städtebaulichen und geschichtlichen Be-u.Gegebenheiten Freiburgs zur Kenntnis. Wir können unumwunden sagen: \"Super\""
     }
   ];
 
