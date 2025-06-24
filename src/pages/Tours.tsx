@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -97,6 +98,11 @@ const Tours = () => {
     }
   ];
 
+  const getShortDescription = (description: string) => {
+    const sentences = description.split(/[.!?]+/).filter(s => s.trim().length > 0);
+    return sentences.slice(0, 3).join('. ') + (sentences.length > 3 ? '.' : '');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -119,16 +125,11 @@ const Tours = () => {
             {tours.map((tour) => (
               <Card 
                 key={tour.id} 
-                className={`hover:shadow-lg transition-all cursor-pointer relative ${
+                className={`hover:shadow-lg transition-all cursor-pointer ${
                   selectedTour === tour.id ? 'ring-2 ring-primary' : ''
                 }`}
                 onClick={() => setSelectedTour(selectedTour === tour.id ? null : tour.id)}
               >
-                {tour.popular && (
-                  <Badge className="absolute -top-2 -right-2 bg-primary text-primary-foreground">
-                    Beliebt
-                  </Badge>
-                )}
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -140,32 +141,19 @@ const Tours = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">{tour.description}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {selectedTour === tour.id ? tour.description : getShortDescription(tour.description)}
+                  </p>
                   
-                  {selectedTour === tour.id && (
-                    <div className="mt-6 space-y-4 border-t border-border pt-4">
-                      <h4 className="font-semibold text-foreground">
-                        Highlights dieser Tour:
-                      </h4>
-                      <ul className="space-y-2">
-                        {tour.highlights.map((highlight, index) => (
-                          <li key={index} className="flex items-start space-x-2">
-                            <span className="text-primary mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
-                            <span className="text-sm text-muted-foreground">{highlight}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <Button asChild className="w-full mt-4">
-                        <Link to="/contact">
-                          Diese Tour buchen
-                        </Link>
-                      </Button>
-                    </div>
-                  )}
-                  
-                  {selectedTour !== tour.id && (
+                  {selectedTour === tour.id ? (
+                    <Button asChild className="w-full mt-4">
+                      <Link to="/contact">
+                        Diese Tour buchen
+                      </Link>
+                    </Button>
+                  ) : (
                     <Button variant="outline" className="w-full">
-                      Details anzeigen
+                      Mehr anzeigen
                     </Button>
                   )}
                 </CardContent>
