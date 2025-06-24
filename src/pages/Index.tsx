@@ -21,7 +21,7 @@ const Index = () => {
     {
       title: "Alter Friedhof",
       description: "Ein besonderer Ort der Ruhe und Geschichte",
-      duration: "120 Minuten",
+      duration: "90 Minuten",
       popular: true
     }
   ];
