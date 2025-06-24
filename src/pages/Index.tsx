@@ -34,9 +34,13 @@ const Index = () => {
       <section className="relative bg-gradient-to-br from-primary/10 to-secondary/20 py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              Thematische Stadtführungen in Freiburg – Individuell auf Ihre Interessen abgestimmt
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
+  Thematische Stadtführungen in Freiburg
+</h1>
+<h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+  Individuell auf Ihre Interessen abgestimmt
+</h2>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6">
                 <Link to="/tours">Touren entdecken</Link>
