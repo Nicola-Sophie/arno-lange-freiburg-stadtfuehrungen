@@ -152,14 +152,26 @@ const Tours = () => {
                   </p>
                   
                   {selectedTour === tour.id ? (
-                    <Button asChild className="w-full mt-4">
-                      <Link to="/contact">
-                        Diese Tour buchen
-                      </Link>
-                    </Button>
+                    <div className="space-y-2">
+                      <Button asChild className="w-full">
+                        <Link to="/contact">
+                          Diese Tour buchen
+                        </Link>
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        className="w-full bg-white hover:bg-gray-50"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedTour(null);
+                        }}
+                      >
+                        weniger anzeigen
+                      </Button>
+                    </div>
                   ) : (
                     <Button variant="outline" className="w-full">
-                      Mehr anzeigen
+                      mehr anzeigen
                     </Button>
                   )}
                 </CardContent>
