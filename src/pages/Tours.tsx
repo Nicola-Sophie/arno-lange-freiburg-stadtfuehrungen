@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -99,8 +100,13 @@ const Tours = () => {
   ];
 
   const getShortDescription = (description: string) => {
-    const sentences = description.split(/[.!?]+/).filter(s => s.trim().length > 0);
-    return sentences.slice(0, 3).join('. ') + (sentences.length > 3 ? '.' : '');
+    // Split description into words and estimate 3 lines (approximately 150-180 characters)
+    const maxLength = 150;
+    if (description.length <= maxLength) return description;
+    
+    const truncated = description.substring(0, maxLength);
+    const lastSpaceIndex = truncated.lastIndexOf(' ');
+    return truncated.substring(0, lastSpaceIndex) + '...';
   };
 
   return (
@@ -207,3 +213,4 @@ const Tours = () => {
 };
 
 export default Tours;
+
