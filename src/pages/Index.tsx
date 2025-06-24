@@ -1,26 +1,42 @@
+
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 
 const Index = () => {
+  const [selectedTour, setSelectedTour] = useState<string | null>(null);
+
   const featuredTours = [
     {
+      id: "klassischer-stadtrundgang",
       title: "Der klassische Stadtrundgang",
-      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso...",
+      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso, warum man die vielen Kilometer Bächle angelegt hat. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten Weltkrieg konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
       duration: "90 Minuten"
     },
     {
+      id: "alter-friedhof",
       title: "Der alte Friedhof",
-      description: "Der denkmalgeschützte alte Friedhof ist seit seiner Stilllegung 1873 ein Platz der Entspannung. Wer hat Kaiser Napoleon in den Fuß geschossen, wer zeigte dem Großherzog die lange Nase und wer legt dem schlafenden Mädchen...",
+      description: "Der denkmalgeschützte alte Friedhof ist seit seiner Stilllegung 1873 ein Platz der Entspannung. Wer hat Kaiser Napoleon in den Fuß geschossen, wer zeigte dem Großherzog die lange Nase und wer legt dem schlafenden Mädchen jahrzehntelang frisch Blumen aufs Grab. Warum läuft ein Totenkopf unter dem Kreuz Jesu und weshalb fliegen so viele seltene Schmetterlinge herum. Dies alles und vieles mehr erfahren Sie auf einem Spaziergang von ca. 1,5 Std.",
       duration: "90 Minuten"
     },
     {
+      id: "modernes-freiburg",
       title: "Das moderne Freiburg",
-      description: "Das moderne Freiburg vom Wiederaufbau bis heute Vom Bahnhof zur Altstadt Die 1,5-stündige Führung zur Stadtentwicklung seit der Nachkriegszeit führt Sie vom Platz der alten Synagoge durch die UB zur...",
+      description: "Das moderne Freiburg vom Wiederaufbau bis heute\n\nVom Bahnhof zur Altstadt\nDie 1,5-stündige Führung zur Stadtentwicklung seit der Nachkriegszeit führt Sie vom Platz der alten Synagoge durch die UB zur Bismarckallee, dem verdichteten Entlastungsraum des Bahnhofs­gegend. Sie sehen die tanzenden Regel und das Windfenster. Durch die Eisenbahnstraße gehen wir zum aktuell neu gestalteten Rotteckring und bestaunen an der Nordwest­ecke der Altstadt moderne Architektur, die sich homogen in den Stadtkörper einfügt, und gehen dann weiter zum Siegesdenkmal, wo der international renommierte Architekt Jürgen Mayer den Pavillon u. die Haltestelle futuristisch gestaltet hat. So verstehen Sie dann das Erfolgsgeheimnis des Freiburger Stadtbildes: Vielfalt in der Einheit!",
       duration: "90 Minuten"
     }
   ];
+
+  const getShortDescription = (description: string) => {
+    const maxLength = 150;
+    if (description.length <= maxLength) return description;
+    
+    const truncated = description.substring(0, maxLength);
+    const lastSpaceIndex = truncated.lastIndexOf(' ');
+    return truncated.substring(0, lastSpaceIndex) + '...';
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -102,7 +118,13 @@ const Index = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {featuredTours.map((tour, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
+                <Card 
+                  key={tour.id} 
+                  className={`hover:shadow-lg transition-all cursor-pointer ${
+                    selectedTour === tour.id ? 'ring-2 ring-primary' : ''
+                  }`}
+                  onClick={() => setSelectedTour(selectedTour === tour.id ? null : tour.id)}
+                >
                   <CardHeader>
                     <CardTitle className="text-xl">{tour.title}</CardTitle>
                     <CardDescription className="text-sm text-primary font-semibold">
@@ -110,7 +132,33 @@ const Index = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground mb-4">{tour.description}</p>
+                    <p className="text-muted-foreground mb-4">
+                      {selectedTour === tour.id ? tour.description : getShortDescription(tour.description)}
+                    </p>
+                    
+                    {selectedTour === tour.id ? (
+                      <div className="space-y-2">
+                        <Button asChild className="w-full">
+                          <Link to="/contact">
+                            Diese Tour buchen
+                          </Link>
+                        </Button>
+                        <Button 
+                          variant="outline" 
+                          className="w-full bg-white hover:bg-gray-50"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedTour(null);
+                          }}
+                        >
+                          weniger anzeigen
+                        </Button>
+                      </div>
+                    ) : (
+                      <Button variant="outline" className="w-full">
+                        mehr anzeigen
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
