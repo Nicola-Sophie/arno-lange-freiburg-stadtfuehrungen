@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,79 +11,24 @@ const Tours = () => {
 
   const tours = [
     {
-      id: "allgemeine-stadtfuehrung",
-      title: "Allgemeine Stadtführung",
+      id: "klassischer-stadtrundgang",
+      title: "Der klassische Stadtrundgang",
       duration: "90 Minuten",
-      description: "Ein umfassender Rundgang durch Freiburgs Geschichte und Sehenswürdigkeiten. Perfekt für Erstbesucher und alle, die einen Überblick über die wichtigsten Aspekte der Stadt erhalten möchten.",
+      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso, warum man die vielen Kilometer Bächle angelegt hat. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
       highlights: [
-        "Freiburger Münster mit gotischer Architektur",
-        "Historische Altstadt und Bächle",
-        "Rathaus und Marktplatz",
-        "Universitätsviertel",
-        "Schwabentor und Martinstor"
+        "Gründungsgeschichte durch Herzog Berthold II",
+        "Die Bedeutung der Freiburger Bächle",
+        "Freiburger Münster und gotische Kirchenbaukunst",
+        "Habsburger Zeit und prächtige Bauten",
+        "Wiederaufbau nach dem Zweiten Weltkrieg",
+        "Das Geheimnis des Krokodils im Gewerbebach"
       ],
       popular: true
-    },
-    {
-      id: "mittelalterliches-freiburg",
-      title: "Mittelalterliches Freiburg",
-      duration: "90 Minuten", 
-      description: "Tauchen Sie ein in die faszinierende mittelalterliche Geschichte Freiburgs. Von der Stadtgründung bis zur Blütezeit als Handelsstadt.",
-      highlights: [
-        "Gründungsgeschichte der Stadt",
-        "Mittelalterliche Stadtbefestigung",
-        "Handwerk und Handel im Mittelalter",
-        "Leben in der mittelalterlichen Stadt",
-        "Architektonische Besonderheiten"
-      ],
-      popular: true
-    },
-    {
-      id: "modernes-freiburg",
-      title: "Modernes Freiburg",
-      duration: "90 Minuten",
-      description: "Entdecken Sie das moderne Freiburg mit seinen innovativen Stadtvierteln und nachhaltigen Konzepten. Ein Blick in die Zukunft der Stadtentwicklung.",
-      highlights: [
-        "Vauban - das Öko-Stadtviertel",
-        "Rieselfeld und moderne Architektur", 
-        "Nachhaltige Stadtentwicklung",
-        "Universitätscampus",
-        "Green City Konzepte"
-      ],
-      popular: false
-    },
-    {
-      id: "architektur-freiburg",
-      title: "Architektur in Freiburg",
-      duration: "60 Minuten",
-      description: "Eine Reise durch die Jahrhunderte der Baukunst - von gotischen Meisterwerken bis zur zeitgenössischen Architektur.",
-      highlights: [
-        "Gotik: Freiburger Münster",
-        "Renaissance und Barock",
-        "Jugendstil-Gebäude",
-        "Moderne Architektur",
-        "Zeitgenössische Bauten"
-      ],
-      popular: false
-    },
-    {
-      id: "juedisches-freiburg",
-      title: "Jüdisches Freiburg",
-      duration: "75 Minuten",
-      description: "Die Geschichte der jüdischen Gemeinde in Freiburg von den Anfängen bis heute. Ein wichtiger Teil der Stadtgeschichte.",
-      highlights: [
-        "Mittelalterliche jüdische Gemeinde",
-        "Synagogen in Freiburg",
-        "Jüdisches Leben und Kultur",
-        "Verfolgung und Widerstand",
-        "Neue jüdische Gemeinde"
-      ],
-      popular: false
     },
     {
       id: "alter-friedhof",
-      title: "Alter Friedhof",
-      duration: "120 Minuten",
+      title: "Der alte Friedhof",
+      duration: "90 Minuten",
       description: "Ein besonderer Ort der Ruhe und Geschichte. Entdecken Sie bedeutende Grabstätten und die Parkanlage des Alten Friedhofs.",
       highlights: [
         "Geschichte des Friedhofs",
@@ -94,9 +40,38 @@ const Tours = () => {
       popular: true
     },
     {
-      id: "freiburg-herdern",
-      title: "Freiburg-Herdern",
-      duration: "120 Minuten",
+      id: "modernes-freiburg",
+      title: "Das moderne Freiburg",
+      duration: "90 Minuten",
+      description: "Von der Nachkriegszeit bis heute - entdecken Sie das moderne Freiburg mit seinen innovativen Stadtvierteln und nachhaltigen Konzepten.",
+      highlights: [
+        "Wiederaufbau nach dem Zweiten Weltkrieg",
+        "Vauban - das Öko-Stadtviertel",
+        "Rieselfeld und moderne Architektur", 
+        "Nachhaltige Stadtentwicklung",
+        "Universitätscampus",
+        "Green City Konzepte"
+      ],
+      popular: false
+    },
+    {
+      id: "juedisches-freiburg",
+      title: "Das jüdische Freiburg",
+      duration: "90 Minuten",
+      description: "Die Geschichte der jüdischen Gemeinde in Freiburg von den Anfängen bis heute. Ein wichtiger Teil der Stadtgeschichte.",
+      highlights: [
+        "Mittelalterliche jüdische Gemeinde",
+        "Synagogen in Freiburg",
+        "Jüdisches Leben und Kultur",
+        "Verfolgung und Widerstand",
+        "Neue jüdische Gemeinde"
+      ],
+      popular: false
+    },
+    {
+      id: "stadtteil-herdern",
+      title: "Der Stadtteil Herdern",
+      duration: "90 Minuten",
       description: "Entdecken Sie den historischen Stadtteil Herdern mit seinen Villen, dem Stadtgarten und besonderen Geschichten.",
       highlights: [
         "Villenarchitektur des 19. Jahrhunderts",
@@ -104,6 +79,20 @@ const Tours = () => {
         "Herdern als Wohnviertel",
         "Besondere Gebäude und Geschichten",
         "Entwicklung des Stadtteils"
+      ],
+      popular: false
+    },
+    {
+      id: "architektur-freiburg",
+      title: "Architektur in Freiburg",
+      duration: "90 Minuten",
+      description: "Eine Reise durch die Jahrhunderte der Baukunst - von gotischen Meisterwerken bis zur zeitgenössischen Architektur.",
+      highlights: [
+        "Gotik: Freiburger Münster",
+        "Renaissance und Barock",
+        "Jugendstil-Gebäude",
+        "Moderne Architektur",
+        "Zeitgenössische Bauten"
       ],
       popular: false
     }
