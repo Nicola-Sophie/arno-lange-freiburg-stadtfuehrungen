@@ -194,8 +194,9 @@ const Tours = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-lg">
-                  Alle Touren können individuell an Ihre Interessen und Bedürfnisse angepasst werden. 
-                  Sprechen Sie mich gerne für spezielle Schwerpunkte oder Kombinationen an.
+                  Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an. 
+                  Sind sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche ich individuell einzugehen.
+
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
                   <div>
