@@ -57,7 +57,7 @@ const Tours = () => {
       id: "juedisches-freiburg",
       title: "Das jüdische Freiburg",
       duration: "90 Minuten",
-      description: "Die Geschichte der jüdischen Gemeinde in Freiburg von den Anfängen bis heute. Ein wichtiger Teil der Stadtgeschichte.",
+      description: "Wie werden die Juden um 1280 im Münsterportal dargestellt? Warum waren sie für die Grafen von Freiburg die wichtigste Einnahmequelle und warum verschwanden sie dann für 438 Jahre völlig aus Freiburg? Der Rundgang startet am Konzerthaus und führt dann zum Platz der alten Synagoge. Dann sehen wir den Stolperstein von Edmund Husserl und beleuchten seine Beziehung zu Edith Stein und Heidegger. Auf dem weiteren Weg streifen wir den ersten jüdischen Gerichtssaal von 1860 und sehen den Platz, auf dem sich 1938 die Juden versammeln mussten, bevor sie ins Konzentrationslager nach Dachau transportiert wurden. Wir enden in der Innenstadt an der neuen Synagoge.",
       highlights: [
         "Mittelalterliche jüdische Gemeinde",
         "Synagogen in Freiburg",
