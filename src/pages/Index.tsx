@@ -71,8 +71,8 @@ const Index = () => {
                   Stadt nochmal neu kennenlernen möchten.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Jede Tour gestalte ich individuell nach Ihren Interessen – denn jeder 
-                  Gast bringt andere Fragen und Neugier mit.
+                  Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an. 
+                  Sind Sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche ich individuell einzugehen.
                 </p>
                 <Button asChild variant="outline">
                   <Link to="/about">Mehr über meine Geschichte</Link>
