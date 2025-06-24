@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -7,27 +8,33 @@ const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Familie Schmidt",
+      name: "Stefanie A.",
       date: "November 2024",
-      comment: "Herr Lange hat uns Freiburg auf eine wunderbare Art nähergebracht. Seine Begeisterung für die Stadt ist ansteckend und er weiß viele interessante Details zu erzählen. Absolut empfehlenswert!"
+      comment: "Informative und kurzweilige Führung. Auf den Rollstuhlfahrer in der Gruppe wurde sorgsam geachtet – danke dafür!"
     },
     {
       id: 2,
-      name: "Thomas M. aus München",
-      date: "September 2024",
-      comment: "Eine sehr gelungene Führung! Herr Lange hat ein enormes Fachwissen und konnte alle unsere Fragen kompetent beantworten. Wir haben viel Neues über Freiburg erfahren."
+      name: "Carlo B.",
+      date: "Oktober 2024",
+      comment: "Herr Lange hat uns freundlich und offen empfangen. Die Führung war kurzweilig, informativ und humorvoll gestaltet. Sein gutes Auge für Details hat uns vielfältige Einblicke gewährt, die man alleine niemals entdeckt hätte. Vielen Dank!"
     },
     {
       id: 3,
-      name: "Maria und Josef K.",
-      date: "September 2024",
-      comment: "Eine sehr informative Tour. Herr Lange behandelt alle Themen mit großem Respekt und Sachverstand. Wir haben viel Neues über unsere Stadt erfahren."
+      name: "Annemarie M.",
+      date: "April 2025",
+      comment: "Es war super. Sehr informativ. Arno hat das Ganze total toll verpackt und ist auch super darauf eingegangen, dass Kinder in der Gruppe waren. Er hat sie mit einbezogen und alles total anschaulich erzählt. Kann ich sehr empfehlen."
     },
     {
       id: 4,
-      name: "Sarah und Tim aus Berlin",
-      date: "Juli 2024",
-      comment: "Wir waren zum ersten Mal in Freiburg und Herr Lange hat uns die Stadt perfekt vorgestellt. Nach der Tour wussten wir genau, was wir noch auf eigene Faust erkunden wollten."
+      name: "Paul G.",
+      date: "April 2025",
+      comment: "Unser Führer Herr Lange hat die Tour sehr informativ und kurzweilig geführt, hat uns super gefallen 😋"
+    },
+    {
+      id: 5,
+      name: "Alina K.",
+      date: "April 2025",
+      comment: "Der Stadtführer A. Lange brachte uns kenntnisreich, locker und sehr gut fundiert die besonderen städtebaulichen und geschichtlichen Be-u.Gegebenheiten Freiburgs zur Kenntnis. Wir können unumwunden sagen: \"Super\""
     }
   ];
 
