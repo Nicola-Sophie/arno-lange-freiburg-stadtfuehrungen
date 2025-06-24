@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -9,6 +10,7 @@ import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 
 const Contact = () => {
+  const [searchParams] = useSearchParams();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,14 +24,22 @@ const Contact = () => {
   const { toast } = useToast();
 
   const tours = [
-    "Allgemeine Stadtführung",
-    "Modernes Freiburg",
+    "Der klassische Stadtrundgang",
+    "Der alte Friedhof",
+    "Das moderne Freiburg",
+    "Das jüdische Freiburg",
+    "Mein Stadtteil Herdern",
     "Architektur in Freiburg",
-    "Jüdisches Freiburg",
-    "Alter Friedhof",
-    "Freiburg-Herdern",
     "Individuelle Tour"
   ];
+
+  // Set the tour from URL parameter when component mounts
+  useEffect(() => {
+    const tourFromUrl = searchParams.get('tour');
+    if (tourFromUrl && tours.includes(tourFromUrl)) {
+      setFormData(prev => ({ ...prev, tour: tourFromUrl }));
+    }
+  }, [searchParams]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

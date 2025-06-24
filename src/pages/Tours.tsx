@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -154,7 +152,7 @@ const Tours = () => {
                   {selectedTour === tour.id ? (
                     <div className="space-y-2">
                       <Button asChild className="w-full">
-                        <Link to="/contact">
+                        <Link to={`/contact?tour=${encodeURIComponent(tour.title)}`}>
                           Diese Tour buchen
                         </Link>
                       </Button>
@@ -225,4 +223,3 @@ const Tours = () => {
 };
 
 export default Tours;
-
