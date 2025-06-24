@@ -13,7 +13,7 @@ const Tours = () => {
       id: "klassischer-stadtrundgang",
       title: "Der klassische Stadtrundgang",
       duration: "90 Minuten",
-      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso, warum man die vielen Kilometer Bächle angelegt hat. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten Weltkrieg konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
+      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso, warum man die vielen Kilometer Bächle angelegt hat. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten Weltkrieg konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
       highlights: [
         "Gründungsgeschichte durch Herzog Berthold II",
         "Die Bedeutung der Freiburger Bächle",
