@@ -33,7 +33,7 @@ const Reviews = () => {
     {
       id: 5,
       name: "Alina K.",
-      date: "April 2025",
+      date: "Mai 2025",
       comment: "Der Stadtführer A. Lange brachte uns kenntnisreich, locker und sehr gut fundiert die besonderen städtebaulichen und geschichtlichen Be-u.Gegebenheiten Freiburgs zur Kenntnis. Wir können unumwunden sagen: \"Super\""
     }
   ];
