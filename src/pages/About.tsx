@@ -46,8 +46,6 @@ const About = () => {
                   <p>
                     Der Weg zum Gästeführer begann für mich nach der Rente, da meine Töchter meinten nur
                     auf der Choach liegen sein nichts für mich.
-                  </p>
-                  <p>
                     Besonders fasziniert mich das Erfolgsgeheimnis des Freiburger Stadtbildes, was da heißt: 
                     "Vielfalt in der Einheit". Jede Gasse, jedes Gebäude hat seine eigene 
                     Geschichte zu erzählen.
@@ -56,8 +54,6 @@ const About = () => {
                     Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an. 
                     Sind Sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche 
                     ich individuell einzugehen.
-                  </p>
-                  <p>
                     Mein Ziel ist es, Ihnen nicht nur Fakten zu vermitteln, sondern 
                     Geschichten zu erzählen, die Freiburg zum Leben erwecken und Ihnen 
                     ein authentisches Gefühl für diese wunderbare Stadt geben.
