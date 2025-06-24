@@ -1,5 +1,6 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 
 const About = () => {
@@ -87,6 +88,28 @@ const About = () => {
               </p>
             </CardContent>
           </Card>
+
+          {/* CTA Section */}
+          <section className="py-12 bg-primary text-primary-foreground rounded-lg">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                  Bereit für Ihre persönliche Stadtführung?
+                </h2>
+                <p className="text-lg md:text-xl mb-8 opacity-90">
+                  Kontaktieren Sie mich für individuelle Termine und Preise
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild variant="secondary" size="lg" className="font-semibold">
+                    <Link to="/contact">Jetzt Buchen</Link>
+                  </Button>
+                  <Button asChild variant="secondary" size="lg" className="font-semibold">
+                    <Link to="/tours">Touren ansehen</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
     </div>

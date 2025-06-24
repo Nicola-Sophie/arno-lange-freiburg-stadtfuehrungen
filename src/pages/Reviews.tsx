@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -86,31 +85,26 @@ const Reviews = () => {
           </div>
 
           {/* CTA Section */}
-          <Card className="bg-primary/5 border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary text-center">
-                Werden Sie Teil der zufriedenen Gäste
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center space-y-4">
-              <p className="text-lg">
-                Erleben Sie selbst eine unvergessliche Stadtführung durch Freiburg. 
-                Ich freue mich darauf, Ihnen meine Begeisterung für diese wunderbare Stadt zu vermitteln.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-                <Button asChild size="lg">
-                  <Link to="/tours">
-                    Touren ansehen
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/contact">
-                    Jetzt buchen
-                  </Link>
-                </Button>
+          <section className="py-12 bg-primary text-primary-foreground rounded-lg">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                  Bereit für Ihre persönliche Stadtführung?
+                </h2>
+                <p className="text-lg md:text-xl mb-8 opacity-90">
+                  Kontaktieren Sie mich für individuelle Termine und Preise
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild variant="secondary" size="lg" className="font-semibold">
+                    <Link to="/contact">Jetzt Buchen</Link>
+                  </Button>
+                  <Button asChild variant="secondary" size="lg" className="font-semibold">
+                    <Link to="/tours">Touren ansehen</Link>
+                  </Button>
+                </div>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </section>
         </div>
       </main>
     </div>
