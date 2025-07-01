@@ -112,14 +112,35 @@ const Tours = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section with Background Image */}
-      <section 
-        className="relative bg-cover bg-center bg-no-repeat py-16"
-        style={{
-          backgroundImage: 'url(/lovable-uploads/41b6da9e-7e67-4cfe-b9c2-aedd85b35d96.png)'
-        }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
+      {/* Hero Section with Image Collage */}
+      <section className="relative py-16">
+        <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-4 gap-0">
+          <div 
+            className="bg-cover bg-center"
+            style={{
+              backgroundImage: 'url(/lovable-uploads/41b6da9e-7e67-4cfe-b9c2-aedd85b35d96.png)'
+            }}
+          />
+          <div 
+            className="bg-cover bg-center"
+            style={{
+              backgroundImage: 'url(/lovable-uploads/e5727a6b-347c-431c-bb04-c5eee388cfed.png)'
+            }}
+          />
+          <div 
+            className="bg-cover bg-center"
+            style={{
+              backgroundImage: 'url(/lovable-uploads/64470bb1-7900-48f5-9b28-f4cbde552550.png)'
+            }}
+          />
+          <div 
+            className="bg-cover bg-center"
+            style={{
+              backgroundImage: 'url(/lovable-uploads/5bfd7611-1b13-4ac9-b0ad-8db2751786ee.png)'
+            }}
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">
