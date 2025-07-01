@@ -72,7 +72,7 @@ const Tours = () => {
       id: "stadtteil-herdern",
       title: "Mein Stadtteil Herdern",
       duration: "90 Minuten",
-      description: "Das Dorf Herdern ist älter als Freiburg. Ein Zähringer starb dort und hinterließ eine wichtige Reliquie. Welchen Geheimtipp gab es für heiratswillige Junggesellen, welches der spätere Papst wusste? Die Herdermer Kurklinik der \"Kaltwasserkurlehre\" – ein \"Muss\". Als wann fuhr die Straßenbahnlinie 6 bis zur Kirche und wo gaben Clara Schumann und Johannes Brahms Konzerte? Das Geld, das woanders verdient wurde, sollte in Freiburg ausgegeben werden, meinte der damalige Bürgermeister Otto Winterer um 1890. So wurde Herdern zu Pensionspolis und die Villen sprossen wie Pilze aus der Erde.",
+      description: "Das Dorf Herdern ist älter als Freiburg. Ein Zähringer starb dort und hinterließ eine bedeutende Reliquie. Welchen Geheimtipp kannten heiratswillige Junggesellen, den sogar der spätere Papst kannte? Die Herdermer Kurklinik der „Kaltwasserkurlehre“ war ein echtes Muss. Bis wann fuhr die Straßenbahnlinie 6 noch bis zur Kirche? Und wo gaben Clara Schumann und Johannes Brahms ihre Konzerte? Das Geld, das anderswo verdient wurde, sollte in Freiburg ausgegeben werden, sagte Bürgermeister Otto Winterer um 1890. Herdern wurde zur Pensionspolis, und die Villen schossen wie Pilze aus dem Boden.",
       highlights: [
         "Villenarchitektur des 19. Jahrhunderts",
         "Stadtgarten und Parkanlagen",
