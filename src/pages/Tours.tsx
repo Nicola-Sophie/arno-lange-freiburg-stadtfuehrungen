@@ -118,7 +118,7 @@ const Tours = () => {
           <div 
             className="bg-cover bg-center"
             style={{
-              backgroundImage: 'url(/lovable-uploads/0ec4188a-ad7e-449e-b79f-025830861629.png)'
+              backgroundImage: 'url(/lovable-uploads/41b6da9e-7e67-4cfe-b9c2-aedd85b35d96.png)'
             }}
           />
           <div 
@@ -143,10 +143,10 @@ const Tours = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">
+            <h1 className="text-5xl font-bold text-white mb-4 drop-shadow-lg">
               Thematische Stadtführungen
             </h1>
-            <p className="text-xl text-white mb-8 drop-shadow-lg">
+            <p className="text-2xl text-white mb-8 drop-shadow-lg">
               Wählen Sie aus verschiedenen Touren durch Freiburg - individuell auf Ihre Interessen abgestimmt
             </p>
             <Badge variant="outline" className="text-sm bg-white/90 text-black border-white">
