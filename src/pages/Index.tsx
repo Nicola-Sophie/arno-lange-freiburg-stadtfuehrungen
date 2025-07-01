@@ -52,10 +52,10 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
               Thematische Stadtführungen in Freiburg
             </h1>
-            <p className="text-2xl text-white mb-6 drop-shadow-lg">
+            <p className="text-3xl text-white mb-6 drop-shadow-lg">
               Individuell auf Ihre Interessen abgestimmt
             </p>
 
