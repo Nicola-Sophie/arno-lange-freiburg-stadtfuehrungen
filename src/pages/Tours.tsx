@@ -83,9 +83,9 @@ const Tours = () => {
     },
     {
       id: "architektur-freiburg",
-      title: "Architektur in Freiburg",
+      title: "Etwas Architektur in Freiburg?",
       duration: "90 Minuten",
-      description: "Eine Reise durch die Jahrhunderte der Baukunst - von gotischen Meisterwerken bis zur zeitgenössischen Architektur.",
+      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo ist es am Münsterchor 'pfusch am Bau'? Die barocken Paiais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Achaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am der Nord- eingang eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkuden wir auf unserem architektonischen Rundgang durch Freiburg",
       highlights: [
         "Gotik: Freiburger Münster",
         "Renaissance und Barock",
