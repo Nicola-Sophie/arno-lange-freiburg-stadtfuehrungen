@@ -118,7 +118,7 @@ const Tours = () => {
           <div 
             className="bg-cover bg-center"
             style={{
-              backgroundImage: 'url(/lovable-uploads/41b6da9e-7e67-4cfe-b9c2-aedd85b35d96.png)'
+              backgroundImage: 'url(/lovable-uploads/0ec4188a-ad7e-449e-b79f-025830861629.png)'
             }}
           />
           <div 
