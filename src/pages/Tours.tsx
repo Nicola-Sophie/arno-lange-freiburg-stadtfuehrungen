@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -111,20 +112,31 @@ const Tours = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <main className="container mx-auto px-4 py-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-foreground mb-4">
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative bg-cover bg-center bg-no-repeat py-16"
+        style={{
+          backgroundImage: 'url(/lovable-uploads/41b6da9e-7e67-4cfe-b9c2-aedd85b35d96.png)'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto text-center">
+            <h1 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">
               Thematische Stadtführungen
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white mb-8 drop-shadow-lg">
               Wählen Sie aus verschiedenen Touren durch Freiburg - individuell auf Ihre Interessen abgestimmt
             </p>
-            <Badge variant="outline" className="text-sm">
+            <Badge variant="outline" className="text-sm bg-white/90 text-black border-white">
               Alle Führungen finden auf Deutsch statt
             </Badge>
           </div>
+        </div>
+      </section>
 
+      <main className="container mx-auto px-4 py-12">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {tours.map((tour) => (
               <Card 

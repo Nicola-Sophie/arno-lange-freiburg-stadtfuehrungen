@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -42,21 +43,27 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 to-secondary/20 py-8">
-        <div className="container mx-auto px-4">
+      <section 
+        className="relative bg-cover bg-center bg-no-repeat py-20"
+        style={{
+          backgroundImage: 'url(/lovable-uploads/41b6da9e-7e67-4cfe-b9c2-aedd85b35d96.png)'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-2">
-  Thematische Stadtführungen in Freiburg
-</h1>
-<p className="text-2xl text-muted-foreground mb-6">
-  Individuell auf Ihre Interessen abgestimmt
-</p>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
+              Thematische Stadtführungen in Freiburg
+            </h1>
+            <p className="text-2xl text-white mb-6 drop-shadow-lg">
+              Individuell auf Ihre Interessen abgestimmt
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6">
                 <Link to="/tours">Touren entdecken</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 bg-white/90 hover:bg-white">
                 <Link to="/contact">Jetzt Buchen</Link>
               </Button>
             </div>
