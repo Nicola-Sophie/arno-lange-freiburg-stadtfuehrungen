@@ -46,7 +46,7 @@ const About = () => {
                   </p>
                   <p>
                     Der Weg zum Gästeführer begann für mich nach der Rente, da meine Töchter meinten nur
-                    auf der Choach liegen sein nichts für mich.
+                    auf der Couch liegen sein nichts für mich.
                     Besonders fasziniert mich das Erfolgsgeheimnis des Freiburger Stadtbildes, was da heißt: 
                     "Vielfalt in der Einheit". Jede Gasse, jedes Gebäude hat seine eigene 
                     Geschichte zu erzählen.
