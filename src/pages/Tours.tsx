@@ -14,7 +14,7 @@ const Tours = () => {
       id: "klassischer-stadtrundgang",
       title: "Der klassische Stadtrundgang",
       duration: "90 Minuten",
-      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso, warum man die vielen Kilometer Bächle angelegt hat. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten Weltkrieg konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
+      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso, warum man die vielen Kilometer Bächle anlegte. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten Weltkrieg konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
       highlights: [
         "Gründungsgeschichte durch Herzog Berthold II",
         "Die Bedeutung der Freiburger Bächle",
@@ -29,7 +29,7 @@ const Tours = () => {
       id: "alter-friedhof",
       title: "Der alte Friedhof",
       duration: "90 Minuten",
-      description: "Der denkmalgeschützte alte Friedhof ist seit seiner Stilllegung 1873 ein Platz der Entspannung. Wer hat Kaiser Napoleon in den Fuß geschossen, wer zeigte dem Großherzog die lange Nase und wer legt dem schlafenden Mädchen jahrzehntelang frisch Blumen aufs Grab. Warum läuft ein Totenkopf unter dem Kreuz Jesu und weshalb fliegen so viele seltene Schmetterlinge herum. Dies alles und vieles mehr erfahren Sie auf einem Spaziergang von ca. 1,5 Std.",
+      description: "Der denkmalgeschützte alte Friedhof ist seit seiner Stilllegung 1873 ein Platz der Entspannung. Wer hat Kaiser Napoleon in den Fuß geschossen, wer zeigte dem Großherzog die lange Nase und wer legt dem schlafenden Mädchen jahrzehntelang frisch Blumen aufs Grab. Warum liegt ein Totenkopf unter dem Kreuz Jesu und weshalb fliegen so viele seteinerne Schmetterlinge herum. Dies alles und vieles mehr erfahren Sie auf einem Spaziergang.",
       highlights: [
         "Geschichte des Friedhofs",
         "Bedeutende Persönlichkeiten",
@@ -43,7 +43,7 @@ const Tours = () => {
       id: "modernes-freiburg",
       title: "Das moderne Freiburg",
       duration: "90 Minuten",
-      description: "Das moderne Freiburg vom Wiederaufbau bis heute\n\nVom Bahnhof zur Altstadt\nDie 1,5-stündige Führung zur Stadtentwicklung seit der Nachkriegszeit führt Sie vom Platz der alten Synagoge durch die UB zur Bismarckallee, dem verdichteten Entlastungsraum des Bahnhofs­gegend. Sie sehen die tanzenden Regel und das Windfenster. Durch die Eisenbahnstraße gehen wir zum aktuell neu gestalteten Rotteckring und bestaunen an der Nordwest­ecke der Altstadt moderne Architektur, die sich homogen in den Stadtkörper einfügt, und gehen dann weiter zum Siegesdenkmal, wo der international renommierte Architekt Jürgen Mayer den Pavillon u. die Haltestelle futuristisch gestaltet hat. So verstehen Sie dann das Erfolgsgeheimnis des Freiburger Stadtbildes: Vielfalt in der Einheit!",
+      description: "Das moderne Freiburg vom Wiederaufbau bis heute\n\nVom Bahnhof zur Altstadt\nDie Führung zur Stadtentwicklung seit der Nachkriegszeit führt Sie vom Platz der alten Synagoge durch die Universitätsbibliothek zur Bismarckallee, dem verdichteten Entlastungsraum der Bahnhofs­gegend. Sie sehen die tanzenden Kegel und das Windfenster. Durch die Eisenbahnstraße gehen wir zum aktuell neu gestalteten Rotteckring und bestaunen an der Nordwest­ecke der Altstadt moderne Architektur, die sich homogen in den Stadtkörper einfügt, und gehen dann weiter zum Siegesdenkmal, wo der international renommierte Architekt Jürgen Mayer den Pavillon u. die Haltestelle futuristisch gestaltet hat. So verstehen Sie dann das Erfolgsgeheimnis des Freiburger Stadtbildes: Vielfalt in der Einheit!",
       highlights: [
         "Wiederaufbau nach dem Zweiten Weltkrieg",
         "Vauban - das Öko-Stadtviertel",
