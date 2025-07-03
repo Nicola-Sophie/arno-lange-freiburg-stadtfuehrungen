@@ -58,7 +58,7 @@ const Tours = () => {
       id: "juedisches-freiburg",
       title: "Das jüdische Freiburg",
       duration: "90 Minuten",
-      description: "Wie werden die Juden um 1280 im Münsterportal dargestellt? Warum waren sie für die Grafen von Freiburg die wichtigste Einnahmequelle und warum verschwanden sie dann für 438 Jahre völlig aus Freiburg? Der Rundgang startet am Konzerthaus und führt dann zum Platz der alten Synagoge. Dann sehen wir den Stolperstein von Edmund Husserl und beleuchten seine Beziehung zu Edith Stein und Heidegger. Auf dem weiteren Weg streifen wir den ersten jüdischen Gerichtssaal von 1860 und sehen den Platz, auf dem sich 1938 die Juden versammeln mussten, bevor sie ins Konzentrationslager nach Dachau transportiert wurden. Wir enden in der Innenstadt an der neuen Synagoge.",
+      description: "Wie werden die Juden um 1280 im Münsterportal dargestellt? Warum waren sie für die Grafen von Freiburg die wichtigste Einnahmequelle und warum verschwanden sie dann für 438 Jahre völlig aus Freiburg? Der Rundgang startet am Konzerthaus und führt zum Platz der alten Synagoge. Dann sehen wir den Stolperstein von Edmund Husserl und beleuchten seine Beziehung zu Edith Stein und Heidegger. Auf dem weiteren Weg streifen wir den ersten jüdischen Gebetssaal von 1860 und sehen den Platz, auf dem sich 1938 die Juden versammeln mussten, bevor sie ins Konzentrationslager nach Dachau transportiert wurden. Wir enden in der Innenstadt an der neuen Synagoge.",
       highlights: [
         "Mittelalterliche jüdische Gemeinde",
         "Synagogen in Freiburg",
@@ -72,7 +72,7 @@ const Tours = () => {
       id: "stadtteil-herdern",
       title: "Mein Stadtteil Herdern",
       duration: "90 Minuten",
-      description: "Das Dorf Herdern ist älter als Freiburg. Ein Zähringer starb dort und hinterließ eine bedeutende Reliquie. Welchen Geheimtipp kannten heiratswillige Junggesellen, den sogar der spätere Papst kannte? Die Herdermer Kurklinik der „Kaltwasserkurlehre“ war ein echtes Muss. Bis wann fuhr die Straßenbahnlinie 6 noch bis zur Kirche? Und wo gaben Clara Schumann und Johannes Brahms ihre Konzerte? Das Geld, das anderswo verdient wurde, sollte in Freiburg ausgegeben werden, sagte Bürgermeister Otto Winterer um 1890. Herdern wurde zur Pensionspolis, und die Villen schossen wie Pilze aus dem Boden.",
+      description: "Das Dorf Herdern ist älter als Freiburg. Ein Zähringer Fürst starb dort und hinterließ eine bedeutende Reliquie. Welchen Geheimtipp kannten heiratswillige Junggesellen? Welcher spätere Papst weihte die Herderner Kurklinik der „Kaltwasserbrüder“ ein?. Bis wann fuhr die Straßenbahnlinie 6 noch bis zur Kirche? Und wo gaben Clara Schumann und Johannes Brahms ihre Konzerte? Das Geld, das anderswo verdient wurde, sollte in Freiburg ausgegeben werden, sagte Bürgermeister Otto Winterer um 1890. Herdern wurde zur Pensionspolis, und die Villen schossen wie Pilze aus dem Boden.",
       highlights: [
         "Villenarchitektur des 19. Jahrhunderts",
         "Stadtgarten und Parkanlagen",
@@ -86,7 +86,7 @@ const Tours = () => {
       id: "architektur-freiburg",
       title: "Etwas Architektur in Freiburg?",
       duration: "90 Minuten",
-      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo ist es am Münsterchor 'pfusch am Bau'? Die barocken Paiais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Achaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am der Nord- eingang eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkuden wir auf unserem architektonischen Rundgang durch Freiburg",
+      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo gibt es am Münsterchor 'Pfusch am Bau'? Die barocken Paiais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Achaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am der Nordeingang eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkuden wir auf unserem architektonischen Rundgang durch Freiburg",
       highlights: [
         "Gotik: Freiburger Münster",
         "Renaissance und Barock",
