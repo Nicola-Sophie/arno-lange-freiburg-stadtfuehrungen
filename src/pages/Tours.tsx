@@ -72,7 +72,7 @@ const Tours = () => {
       id: "stadtteil-herdern",
       title: "Mein Stadtteil Herdern",
       duration: "90 Minuten",
-      description: "Das Dorf Herdern ist älter als Freiburg. Ein Zähringer Fürst starb dort und hinterließ eine bedeutende Reliquie. Welchen Geheimtipp kannten heiratswillige Junggesellen? Welcher spätere Papst weihte die Herderner Kurklinik der „Kaltwasserbrüder“ ein?. Bis wann fuhr die Straßenbahnlinie 6 noch bis zur Kirche? Und wo gaben Clara Schumann und Johannes Brahms ihre Konzerte? Das Geld, das anderswo verdient wurde, sollte in Freiburg ausgegeben werden, sagte Bürgermeister Otto Winterer um 1890. Herdern wurde zur Pensionspolis, und die Villen schossen wie Pilze aus dem Boden.",
+      description: "Das Dorf Herdern ist älter als Freiburg. Ein Zähringer Fürst starb dort und hinterließ eine bedeutende Reliquie. Welchen Geheimtipp kannten heiratswillige Junggesellen? Welcher spätere Papst weihte die Herderner Kurklinik der „Kaltwasserbrüder" ein?. Bis wann fuhr die Straßenbahnlinie 6 noch bis zur Kirche? Und wo gaben Clara Schumann und Johannes Brahms ihre Konzerte? Das Geld, das anderswo verdient wurde, sollte in Freiburg ausgegeben werden, sagte Bürgermeister Otto Winterer um 1890. Herdern wurde zur Pensionspolis, und die Villen schossen wie Pilze aus dem Boden.",
       highlights: [
         "Villenarchitektur des 19. Jahrhunderts",
         "Stadtgarten und Parkanlagen",
@@ -86,7 +86,7 @@ const Tours = () => {
       id: "architektur-freiburg",
       title: "Etwas Architektur in Freiburg?",
       duration: "90 Minuten",
-      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo gibt es am Münsterchor 'Pfusch am Bau'? Die barocken Palais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Arkaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am nördliche Eingang der Innenstadt eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkunden wir auf unserem architektonischen Rundgang durch Freiburg".,
+      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo gibt es am Münsterchor 'Pfusch am Bau'? Die barocken Palais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Arkaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am nördliche Eingang der Innenstadt eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkunden wir auf unserem architektonischen Rundgang durch Freiburg.",
       highlights: [
         "Gotik: Freiburger Münster",
         "Renaissance und Barock",
@@ -221,7 +221,6 @@ const Tours = () => {
                 <p className="text-lg">
                   Jede Führung passe ich an die Interessen und Bedürfnisse meiner Gäste an. 
                   Sind sie Arzt, Jurist, Architekt oder etwas ganz anderes? Auf alles versuche ich individuell einzugehen.
-
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
                   <div>
