@@ -85,7 +85,7 @@ const Tours = () => {
       id: "architektur-freiburg",
       title: "Etwas Architektur in Freiburg?",
       duration: "90 Minuten",
-      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo gibt es am Münsterchor 'Pfusch am Bau'? Die barocken Palais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Arkaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am nördliche Eingang der Innenstadt eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkunden wir auf unserem architektonischen Rundgang durch Freiburg.",
+      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo gibt es am Münsterchor 'Pfusch am Bau'? Die barocken Palais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Arkaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am nördlichen Eingang der Innenstadt eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkunden wir auf unserem architektonischen Rundgang durch Freiburg.",
       highlights: [
         "Gotik: Freiburger Münster",
         "Renaissance und Barock",
