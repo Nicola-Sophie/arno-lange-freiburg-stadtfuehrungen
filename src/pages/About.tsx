@@ -45,8 +45,8 @@ const About = () => {
                     besonderen Ort, den ich gerne mit anderen teile.
                   </p>
                   <p>
-                    Der Weg zum Gästeführer begann für mich nach der Rente, da meine Töchter meinten nur
-                    auf der Couch liegen sein nichts für mich.
+                    Der Weg zum Gästeführer begann für mich nach der Rente, da meine Töchter meinten, nur
+                    auf der Couch liegen sei nichts für mich.
                     Besonders fasziniert mich das Erfolgsgeheimnis des Freiburger Stadtbildes, was da heißt: 
                     "Vielfalt in der Einheit". Jede Gasse, jedes Gebäude hat seine eigene 
                     Geschichte zu erzählen.
