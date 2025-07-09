@@ -11,13 +11,13 @@ const Index = () => {
     {
       id: "klassischer-stadtrundgang",
       title: "Der klassische Stadtrundgang",
-      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat erfahren sie genauso, warum man die vielen Kilometer Bächle anlegte. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten Weltkrieg konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
+      description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat, erfahren Sie genauso, warum man die vielen Kilometer Bächle anlegte. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten Weltkrieg konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
       duration: "90 Minuten"
     },
     {
       id: "alter-friedhof",
       title: "Der alte Friedhof",
-      description: "Der denkmalgeschützte alte Friedhof ist seit seiner Stilllegung 1873 ein Platz der Entspannung. Wer hat Kaiser Napoleon in den Fuß geschossen, wer zeigte dem Großherzog die lange Nase und wer legt dem schlafenden Mädchen jahrzehntelang frisch Blumen aufs Grab. Warum liegt ein Totenkopf unter dem Kreuz Jesu und weshalb fliegen so viele seteinerne Schmetterlinge herum. Dies alles und vieles mehr erfahren Sie auf einem Spaziergang.",
+      description: "Der denkmalgeschützte alte Friedhof ist seit seiner Stilllegung 1872 ein Platz der Entspannung. Wer hat Kaiser Napoleon in den Fuß geschossen, wer zeigte dem Großherzog die lange Nase und wer legt dem schlafenden Mädchen jahrzehntelang frisch Blumen aufs Grab. Warum liegt ein Totenkopf unter dem Kreuz Jesu und weshalb fliegen so viele seteinerne Schmetterlinge herum. Dies alles und vieles mehr erfahren Sie auf einem Spaziergang.",
       duration: "90 Minuten"
     },
     {
