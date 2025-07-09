@@ -58,7 +58,7 @@ const Tours = () => {
       id: "juedisches-freiburg",
       title: "Das jüdische Freiburg",
       duration: "90 Minuten",
-      description: "Wie werden die Juden um 1280 im Münsterportal dargestellt? Warum waren sie für die Grafen von Freiburg die wichtigste Einnahmequelle und warum verschwanden sie dann für 438 Jahre völlig aus Freiburg? Der Rundgang startet am Konzerthaus und führt zum Platz der alten Synagoge. Dann sehen wir den Stolperstein von Edmund Husserl und beleuchten seine Beziehung zu Edith Stein und Heidegger. Auf dem weiteren Weg streifen wir den ersten jüdischen Gebetssaal von 1860 und sehen den Platz, auf dem sich 1938 die Juden versammeln mussten, bevor sie ins Konzentrationslager nach Dachau transportiert wurden. Wir enden in der Innenstadt an der neuen Synagoge.",
+      description: "Wie werden die Juden um 1280 im Münsterportal dargestellt? Warum waren sie für die Grafen von Freiburg die wichtigste Einnahmequelle und warum verschwanden sie dann für 438 Jahre völlig aus Freiburg? Der Rundgang startet am Konzerthaus und führt zum Platz der alten Synagoge. Dann sehen wir den Stolperstein von Edmund Husserl und beleuchten seine Beziehung zu Martin Heidegger. Auf dem weiteren Weg streifen wir den ersten jüdischen Gebetssaal von 1860 und sehen den Platz, auf dem sich 1938 die Juden versammeln mussten, bevor sie ins Konzentrationslager nach Dachau transportiert wurden. Wir enden in der Innenstadt an der neuen Synagoge.",
       highlights: [
         "Mittelalterliche jüdische Gemeinde",
         "Synagogen in Freiburg",
@@ -86,7 +86,7 @@ const Tours = () => {
       id: "architektur-freiburg",
       title: "Etwas Architektur in Freiburg?",
       duration: "90 Minuten",
-      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo gibt es am Münsterchor 'Pfusch am Bau'? Die barocken Paiais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Achaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am der Nordeingang eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkuden wir auf unserem architektonischen Rundgang durch Freiburg",
+      description: "Eine Reise durch die Jahrhunderte der Baukunst. Vom Meisterwerk der Gotik bis zur zeitgenössischen Architektur. Wo gibt es am Münsterchor 'Pfusch am Bau'? Die barocken Palais: exakt rekonstruierte architektonische Hüllen. Warum hat Freiburg soviel Arkaden und in der Innenstadt keinerlei Flachdächer? Dafür gibt es aber am nördliche Eingang der Innenstadt eine Haltestelle in moderner geometrisch-verspielter Manier. Das und vieles mehr erkunden wir auf unserem architektonischen Rundgang durch Freiburg".,
       highlights: [
         "Gotik: Freiburger Münster",
         "Renaissance und Barock",
