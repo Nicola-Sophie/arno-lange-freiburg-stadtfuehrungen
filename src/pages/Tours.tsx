@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,7 +11,7 @@ const Tours = () => {
   const tours = [
     {
       id: "klassischer-stadtrundgang",
-      title: "Der klassische Stadtrundgang",
+      title: "Der klassische Stadtrundgang", 
       duration: "90 Minuten",
       description: "Freiburg wurde im Hohen Mittelalter von Herzog Berthold II aus „freien Stücken\" gegründet. Was das bedeutet und warum sein zweitgeborener Sohn dort dann eine florierenden Marktsiedlung gegründet hat, erfahren Sie genauso, warum man die vielen Kilometer Bächle anlegte. Der Bau des Freiburger Münsters setzte neue Maßstäbe in der gotischen Kirchenbaukunst. Unter den Habsburgern blühte Freiburg in der frühen Neuzeit auf und es entstanden prächtige Bauten. Nach der Zerstörung im zweiten Weltkrieg konnte durch bewahrenden Heimatschutzstil im Wiederaufbau die Attraktivität der Altstadt gerettet werden. Warum schwimmt eigentlich ein Krokodil im Gewerbebach?",
       highlights: [
@@ -72,7 +71,7 @@ const Tours = () => {
       id: "stadtteil-herdern",
       title: "Mein Stadtteil Herdern",
       duration: "90 Minuten",
-      description: "Das Dorf Herdern ist älter als Freiburg. Ein Zähringer Fürst starb dort und hinterließ eine bedeutende Reliquie. Welchen Geheimtipp kannten heiratswillige Junggesellen? Welcher spätere Papst weihte die Herderner Kurklinik der „Kaltwasserbrüder" ein?. Bis wann fuhr die Straßenbahnlinie 6 noch bis zur Kirche? Und wo gaben Clara Schumann und Johannes Brahms ihre Konzerte? Das Geld, das anderswo verdient wurde, sollte in Freiburg ausgegeben werden, sagte Bürgermeister Otto Winterer um 1890. Herdern wurde zur Pensionspolis, und die Villen schossen wie Pilze aus dem Boden.",
+      description: "Das Dorf Herdern ist älter als Freiburg. Ein Zähringer Fürst starb dort und hinterließ eine bedeutende Reliquie. Welchen Geheimtipp kannten heiratswillige Junggesellen? Welcher spätere Papst weihte die Herderner Kurklinik der Kaltwasserbrüder ein? Bis wann fuhr die Straßenbahnlinie 6 noch bis zur Kirche? Und wo gaben Clara Schumann und Johannes Brahms ihre Konzerte? Das Geld, das anderswo verdient wurde, sollte in Freiburg ausgegeben werden, sagte Bürgermeister Otto Winterer um 1890. Herdern wurde zur Pensionspolis, und die Villen schossen wie Pilze aus dem Boden.",
       highlights: [
         "Villenarchitektur des 19. Jahrhunderts",
         "Stadtgarten und Parkanlagen",
@@ -118,7 +117,7 @@ const Tours = () => {
           <div 
             className="bg-cover bg-center"
             style={{
-              backgroundImage: 'url(/lovable-uploads/0ec4188a-ad7e-449e-b79f-025830861629.png)'
+              backgroundImage: 'url(/lovable-uploads/b0457f5c-687d-4d62-85fb-d301bf3538a4.png)'
             }}
           />
           <div 
