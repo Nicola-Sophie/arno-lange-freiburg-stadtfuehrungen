@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/arno-lange-freiburg-stadtfuehrungen",
   server: {
     host: "::",
     port: 8080,
